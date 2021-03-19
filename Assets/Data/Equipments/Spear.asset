@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c89e0787a1bf9478336569a76f33c4, type: 3}
+  m_Name: Spear
+  m_EditorClassIdentifier: Assembly-CSharp:Data:Equipment8DirRanged
+  dash: {fileID: 7400000, guid: db0a7cb1a40d6d34ab4e011012859447, type: 2}
+  move: {fileID: 7400000, guid: 171b1829c6cfd8d40ba48d93d4d7dcf1, type: 2}
+  moveUp: {fileID: 0}
+  wall: {fileID: 7400000, guid: 6e0b1c1de21597040bec1f91510a8291, type: 2}
+  wallCharged: {fileID: 7400000, guid: 60357b1c33fdf1e4b8ac8c2bb050b369, type: 2}
+  aerial4: {fileID: 0}
+  aerial4Down: {fileID: 0}
+  aerial4Up: {fileID: 0}
+  idle4: {fileID: 0}
+  idle4_2: {fileID: 0}
+  idle4_3: {fileID: 0}
+  idle4Up: {fileID: 0}
+  idle4Charged: {fileID: 7400000, guid: e7e700fa9e798aa489e1fca67abf3a46, type: 2}
+  aerial4Charged: {fileID: 7400000, guid: 3d97c3a2a5973854b9a16e01f861927e, type: 2}
+  aerial8: {fileID: 7400000, guid: d293e97dd716c694e9104fecaae5a6c9, type: 2}
+  aerial8Down: {fileID: 7400000, guid: eb17ff4788f792248b67cb180fa353f9, type: 2}
+  aerial8DownDiag: {fileID: 7400000, guid: 9fc33c885c5fccb48bcb6537fb9fcf5a, type: 2}
+  aerial8Up: {fileID: 7400000, guid: b74024a111bd9ee44a49e6c0aa526601, type: 2}
+  aerial8UpDiag: {fileID: 7400000, guid: be6df4c8b5814a6409e79d91095b6f60, type: 2}
+  idle8: {fileID: 7400000, guid: ccb87f7bce7d6c3468b92d979359d62c, type: 2}
+  idle8DownDiag: {fileID: 7400000, guid: 496468e83f33ccf4790285c9bb50b2de, type: 2}
+  idle8Up: {fileID: 7400000, guid: 389481e360933bc47a8e4cd0cad0c32b, type: 2}
+  idle8UpDiag: {fileID: 7400000, guid: f023e6885dac19b439d644092b6a6394, type: 2}
+  aerial8Charged: {fileID: 7400000, guid: 973cbacecb7695b418fd3b7624e6c10a, type: 2}
+  aerial8ChargedDown: {fileID: 7400000, guid: 3bb7fa789a8c13d499eeac7180b89df6, type: 2}
+  aerial8ChargedDownDiag: {fileID: 7400000, guid: cef8adb57e04a954c9175b329b1be079,
+    type: 2}
+  aerial8ChargedUp: {fileID: 7400000, guid: 98b95a0b0004f264a9da76e8c877b3c9, type: 2}
+  aerial8ChargedUpDiag: {fileID: 7400000, guid: 0083c2496daeb8547834c61059e445b3,
+    type: 2}
+  idle8Charged: {fileID: 7400000, guid: 9d9577092a93aaf4f96e49b80f65445e, type: 2}
+  idle8ChargedDownDiag: {fileID: 7400000, guid: 54bf7e0b59decf84ca65ac580b7f78c0,
+    type: 2}
+  idle8ChargedUp: {fileID: 7400000, guid: aa4980393829515428bb1a9f1958fdd3, type: 2}
+  idle8ChargedUpDiag: {fileID: 7400000, guid: df2981aad38ce05439ca64d557e3fc15, type: 2}
+  type: 0
+  typeRange: 1
+  Ctype: 0
+  CtypeRange: 1
+  weaponOffset: 2
+  damange: 0
+  chargedDamage: 0
+  poolSize: 5
+  lightPool: {fileID: 11400000, guid: bb9d72dacb5e21e49ae4e4e63be8f98a, type: 2}
+  heavyPool: {fileID: 11400000, guid: 9a4e9d4989bb0fa4eb263fd31e3c4c2a, type: 2}
+  lightFactory: {fileID: 11400000, guid: e082281457a81444aa2d2a5a9f9eb9ab, type: 2}
+  heavyFactory: {fileID: 11400000, guid: f0e4906139d9b674384457a58ae2fb88, type: 2}
