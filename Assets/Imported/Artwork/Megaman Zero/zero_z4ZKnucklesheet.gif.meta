@@ -1,0 +1,2756 @@
+fileFormatVersion: 2
+guid: f12be30bd205a4942bef5c0369eebf4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6079551107213693869
+    second: zero_z4ZKnucklesheet_0
+  - first:
+      213: 2900527358100559097
+    second: zero_z4ZKnucklesheet_1
+  - first:
+      213: -7569123459323103974
+    second: zero_z4ZKnucklesheet_2
+  - first:
+      213: -4407582139598296462
+    second: zero_z4ZKnucklesheet_3
+  - first:
+      213: -3379440795846044257
+    second: zero_z4ZKnucklesheet_4
+  - first:
+      213: -3653912757318591860
+    second: zero_z4ZKnucklesheet_5
+  - first:
+      213: -6335222162917212257
+    second: zero_z4ZKnucklesheet_6
+  - first:
+      213: 5108664922341928658
+    second: zero_z4ZKnucklesheet_7
+  - first:
+      213: -111457301171429199
+    second: zero_z4ZKnucklesheet_8
+  - first:
+      213: -2499613108047158307
+    second: zero_z4ZKnucklesheet_9
+  - first:
+      213: 4386121933110304471
+    second: zero_z4ZKnucklesheet_10
+  - first:
+      213: 2232129275282254098
+    second: zero_z4ZKnucklesheet_11
+  - first:
+      213: 450999147778054314
+    second: zero_z4ZKnucklesheet_12
+  - first:
+      213: 7907894144804832816
+    second: zero_z4ZKnucklesheet_13
+  - first:
+      213: 5331349596477801817
+    second: zero_z4ZKnucklesheet_14
+  - first:
+      213: 8775820017847639514
+    second: zero_z4ZKnucklesheet_15
+  - first:
+      213: 2627199217450829472
+    second: zero_z4ZKnucklesheet_16
+  - first:
+      213: -8073749519736838700
+    second: zero_z4ZKnucklesheet_17
+  - first:
+      213: 4739977515673787122
+    second: zero_z4ZKnucklesheet_18
+  - first:
+      213: 6529482867978509388
+    second: zero_z4ZKnucklesheet_19
+  - first:
+      213: -7996462607399098533
+    second: zero_z4ZKnucklesheet_20
+  - first:
+      213: -3566048907087453228
+    second: zero_z4ZKnucklesheet_21
+  - first:
+      213: -2806475974901804064
+    second: zero_z4ZKnucklesheet_22
+  - first:
+      213: -4142696979050379940
+    second: zero_z4ZKnucklesheet_23
+  - first:
+      213: 4928848824925629047
+    second: zero_z4ZKnucklesheet_24
+  - first:
+      213: 1180816226166933114
+    second: zero_z4ZKnucklesheet_25
+  - first:
+      213: 588994721633393864
+    second: zero_z4ZKnucklesheet_26
+  - first:
+      213: -5420607329605837026
+    second: zero_z4ZKnucklesheet_27
+  - first:
+      213: -8117492433615324729
+    second: zero_z4ZKnucklesheet_28
+  - first:
+      213: 310872754296071101
+    second: zero_z4ZKnucklesheet_29
+  - first:
+      213: 874505337851060769
+    second: zero_z4ZKnucklesheet_30
+  - first:
+      213: -6059183056490158242
+    second: zero_z4ZKnucklesheet_31
+  - first:
+      213: -3521179093606066144
+    second: zero_z4ZKnucklesheet_32
+  - first:
+      213: 710395639085018021
+    second: zero_z4ZKnucklesheet_33
+  - first:
+      213: 3043142837340471600
+    second: zero_z4ZKnucklesheet_34
+  - first:
+      213: -3129650974558139459
+    second: zero_z4ZKnucklesheet_35
+  - first:
+      213: 3164780195358687589
+    second: zero_z4ZKnucklesheet_36
+  - first:
+      213: -6995361095840897433
+    second: zero_z4ZKnucklesheet_37
+  - first:
+      213: 449250612068260676
+    second: zero_z4ZKnucklesheet_38
+  - first:
+      213: 6909448903131045085
+    second: zero_z4ZKnucklesheet_39
+  - first:
+      213: -5080959837385089396
+    second: zero_z4ZKnucklesheet_40
+  - first:
+      213: -4880315436086469618
+    second: zero_z4ZKnucklesheet_41
+  - first:
+      213: 4420373218924399919
+    second: zero_z4ZKnucklesheet_42
+  - first:
+      213: 387197749085729965
+    second: zero_z4ZKnucklesheet_43
+  - first:
+      213: -7823995574932560386
+    second: zero_z4ZKnucklesheet_44
+  - first:
+      213: -6178884179820132897
+    second: zero_z4ZKnucklesheet_45
+  - first:
+      213: -4738599494217110362
+    second: zero_z4ZKnucklesheet_46
+  - first:
+      213: 1983747020381081017
+    second: zero_z4ZKnucklesheet_47
+  - first:
+      213: -6812843718133511678
+    second: zero_z4ZKnucklesheet_48
+  - first:
+      213: -7568082064519232965
+    second: zero_z4ZKnucklesheet_49
+  - first:
+      213: -3330667094869202693
+    second: zero_z4ZKnucklesheet_50
+  - first:
+      213: 5435458706548163685
+    second: zero_z4ZKnucklesheet_51
+  - first:
+      213: -528485615568897458
+    second: zero_z4ZKnucklesheet_52
+  - first:
+      213: -7606509980405024967
+    second: zero_z4ZKnucklesheet_53
+  - first:
+      213: -3235899540863675549
+    second: zero_z4ZKnucklesheet_54
+  - first:
+      213: 6138295053588757297
+    second: zero_z4ZKnucklesheet_55
+  - first:
+      213: 4013581162511090516
+    second: zero_z4ZKnucklesheet_56
+  - first:
+      213: -426895279939302651
+    second: zero_z4ZKnucklesheet_57
+  - first:
+      213: -656275024205500873
+    second: zero_z4ZKnucklesheet_58
+  - first:
+      213: 1447440796789365936
+    second: zero_z4ZKnucklesheet_59
+  - first:
+      213: 5941607114934120981
+    second: zero_z4ZKnucklesheet_60
+  - first:
+      213: -2331322990717220619
+    second: zero_z4ZKnucklesheet_61
+  - first:
+      213: -3058730658128003595
+    second: zero_z4ZKnucklesheet_62
+  - first:
+      213: 9073883624429908427
+    second: zero_z4ZKnucklesheet_63
+  - first:
+      213: 8456232069547500946
+    second: zero_z4ZKnucklesheet_64
+  - first:
+      213: -8483451512280168533
+    second: zero_z4ZKnucklesheet_65
+  - first:
+      213: 4437365768612101406
+    second: zero_z4ZKnucklesheet_66
+  - first:
+      213: 3684574342127725247
+    second: zero_z4ZKnucklesheet_67
+  - first:
+      213: -3636335636090762584
+    second: zero_z4ZKnucklesheet_68
+  - first:
+      213: 1823980556027143738
+    second: zero_z4ZKnucklesheet_69
+  - first:
+      213: 2703331110552696624
+    second: zero_z4ZKnucklesheet_70
+  - first:
+      213: 5595805896257639448
+    second: zero_z4ZKnucklesheet_71
+  - first:
+      213: 4373407337538408940
+    second: zero_z4ZKnucklesheet_72
+  - first:
+      213: -8661603799029364932
+    second: zero_z4ZKnucklesheet_73
+  - first:
+      213: -371932542271447200
+    second: zero_z4ZKnucklesheet_74
+  - first:
+      213: -4637824138666502040
+    second: zero_z4ZKnucklesheet_75
+  - first:
+      213: 2290732151921837726
+    second: zero_z4ZKnucklesheet_76
+  - first:
+      213: 4498911268327596150
+    second: zero_z4ZKnucklesheet_77
+  - first:
+      213: 5229308363674931584
+    second: zero_z4ZKnucklesheet_78
+  - first:
+      213: -9215986115919912747
+    second: zero_z4ZKnucklesheet_79
+  - first:
+      213: 8300866880018976207
+    second: zero_z4ZKnucklesheet_80
+  - first:
+      213: -1174889081695802897
+    second: zero_z4ZKnucklesheet_81
+  - first:
+      213: -4423597427696316675
+    second: zero_z4ZKnucklesheet_82
+  - first:
+      213: 894157647314296877
+    second: zero_z4ZKnucklesheet_83
+  - first:
+      213: 7520412872253986131
+    second: zero_z4ZKnucklesheet_84
+  - first:
+      213: -3435221210785765679
+    second: zero_z4ZKnucklesheet_85
+  - first:
+      213: 4811961328315631622
+    second: zero_z4ZKnucklesheet_86
+  - first:
+      213: -8580548857488720582
+    second: zero_z4ZKnucklesheet_87
+  - first:
+      213: -1899342604555002789
+    second: zero_z4ZKnucklesheet_88
+  - first:
+      213: 3347645888717368417
+    second: zero_z4ZKnucklesheet_89
+  - first:
+      213: 2627391007784462641
+    second: zero_z4ZKnucklesheet_90
+  - first:
+      213: -2218381546069794650
+    second: zero_z4ZKnucklesheet_91
+  - first:
+      213: -7573664319447556704
+    second: zero_z4ZKnucklesheet_92
+  - first:
+      213: -2072500738861746333
+    second: zero_z4ZKnucklesheet_93
+  - first:
+      213: -8152310238671072310
+    second: zero_z4ZKnucklesheet_94
+  - first:
+      213: 1811811754489766357
+    second: zero_z4ZKnucklesheet_95
+  - first:
+      213: 7236590143987632685
+    second: zero_z4ZKnucklesheet_96
+  - first:
+      213: 6320135230387002749
+    second: zero_z4ZKnucklesheet_97
+  - first:
+      213: -7852670924949785330
+    second: zero_z4ZKnucklesheet_98
+  - first:
+      213: -7223879846859793545
+    second: zero_z4ZKnucklesheet_99
+  - first:
+      213: 400915637181437103
+    second: zero_z4ZKnucklesheet_100
+  - first:
+      213: -2413987617821679731
+    second: zero_z4ZKnucklesheet_101
+  - first:
+      213: 6496354866204180428
+    second: zero_z4ZKnucklesheet_102
+  - first:
+      213: -2950451242484998832
+    second: zero_z4ZKnucklesheet_103
+  - first:
+      213: -6147322921727550019
+    second: zero_z4ZKnucklesheet_104
+  - first:
+      213: 3871841641148492235
+    second: zero_z4ZKnucklesheet_105
+  - first:
+      213: -6353152008371545715
+    second: zero_z4ZKnucklesheet_106
+  - first:
+      213: 6633689149954769796
+    second: zero_z4ZKnucklesheet_107
+  - first:
+      213: -5223933004454929982
+    second: zero_z4ZKnucklesheet_108
+  - first:
+      213: -5181340768427956971
+    second: zero_z4ZKnucklesheet_109
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 755
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da31e4b6587ee5450800000000000000
+      internalID: 6079551107213693869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 754
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4d2e8b34eb04820800000000000000
+      internalID: 2900527358100559097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 753
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1578f1115215f690800000000000000
+      internalID: -7569123459323103974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 753
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a23ea756f15d2c0800000000000000
+      internalID: -4407582139598296462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 753
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9512205080d911d0800000000000000
+      internalID: -3379440795846044257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 756
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ad1cbd4b1ba4dc0800000000000000
+      internalID: -3653912757318591860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_6
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 757
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f332e1205c418a0800000000000000
+      internalID: -6335222162917212257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_7
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 758
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de60b41eaf95e640800000000000000
+      internalID: 5108664922341928658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_8
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 758
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0ad04dc26047ef0800000000000000
+      internalID: -111457301171429199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 692
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd360fa2f179f4dd0800000000000000
+      internalID: -2499613108047158307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 692
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ded694d8a2aedc30800000000000000
+      internalID: 4386121933110304471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 693
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219e2f1efbd1afe10800000000000000
+      internalID: 2232129275282254098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_12
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 693
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8905dd555424600800000000000000
+      internalID: 450999147778054314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_13
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 693
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036cb7ea3db7ebd60800000000000000
+      internalID: 7907894144804832816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_14
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 694
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9554b771632ccf940800000000000000
+      internalID: 5331349596477801817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_15
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 693
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add12985fc9f9c970800000000000000
+      internalID: 8775820017847639514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_16
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 692
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6475ec4cfa57420800000000000000
+      internalID: 2627199217450829472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 694
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5ea9e969744ff80800000000000000
+      internalID: -8073749519736838700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 630
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa1311ef68c7c140800000000000000
+      internalID: 4739977515673787122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_19
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 630
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c9bd0e2126d9a50800000000000000
+      internalID: 6529482867978509388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_20
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 631
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57684a20abd60190800000000000000
+      internalID: -7996462607399098533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 631
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3e169a969d28ec0800000000000000
+      internalID: -3566048907087453228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_22
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 631
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e35f4d58f46d09d0800000000000000
+      internalID: -2806475974901804064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_23
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 630
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c554e97eb0f2286c0800000000000000
+      internalID: -4142696979050379940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_24
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 630
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a2b4164e9c66440800000000000000
+      internalID: 4928848824925629047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_25
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 631
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7682b9f91a136010800000000000000
+      internalID: 1180816226166933114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_26
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 631
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccd98524978c2800800000000000000
+      internalID: 588994721633393864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 562
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f17f37a5226c4b0800000000000000
+      internalID: -5420607329605837026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_28
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 562
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9ff63d3afd85f80800000000000000
+      internalID: -8117492433615324729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_29
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 563
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db32a2a7f11705400800000000000000
+      internalID: 310872754296071101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_30
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 563
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122abc0b8fdd22c00800000000000000
+      internalID: 874505337851060769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_31
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 563
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57a6d0fc1579eba0800000000000000
+      internalID: -6059183056490158242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_32
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 559
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02814173542422fc0800000000000000
+      internalID: -3521179093606066144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_33
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 561
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab26a5e115dbd900800000000000000
+      internalID: 710395639085018021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_34
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 561
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031047c894a6b3a20800000000000000
+      internalID: 3043142837340471600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_35
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 561
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbc18e250f3194d0800000000000000
+      internalID: -3129650974558139459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 500
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561cb88e1de8beb20800000000000000
+      internalID: 3164780195358687589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_37
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 500
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766e0d6752c7bee90800000000000000
+      internalID: -6995361095840897433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_38
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 500
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b947b2d0f0c3600800000000000000
+      internalID: 449250612068260676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_39
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 501
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc96d86b2b43ef50800000000000000
+      internalID: 6909448903131045085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_40
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 501
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e92aea2fdcc79b0800000000000000
+      internalID: -5080959837385089396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_41
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 501
+        width: 59
+        height: 46
+      alignment: 9
+      pivot: {x: 0.4402352, y: 0.52874625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cd538c7f2a54cb0800000000000000
+      internalID: -4880315436086469618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_42
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 501
+        width: 54
+        height: 46
+      alignment: 9
+      pivot: {x: 0.3857275, y: 0.51916504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d83a0c502585d30800000000000000
+      internalID: 4420373218924399919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_43
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 501
+        width: 54
+        height: 46
+      alignment: 9
+      pivot: {x: 0.40205213, y: 0.53832877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4f5142d4a9f5500800000000000000
+      internalID: 387197749085729965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_44
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 502
+        width: 51
+        height: 46
+      alignment: 9
+      pivot: {x: 0.43086034, y: 0.53832877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5aae75a759b6390800000000000000
+      internalID: -7823995574932560386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_45
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 441
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd54a895391304aa0800000000000000
+      internalID: -6178884179820132897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_46
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 442
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ace75ebddc1d3eb0800000000000000
+      internalID: -4738599494217110362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_47
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 442
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdcd0a976fa78b10800000000000000
+      internalID: 1983747020381081017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_48
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 444
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a866efbbae371a0800000000000000
+      internalID: -6812843718133511678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_49
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 444
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b328351b575c8f690800000000000000
+      internalID: -7568082064519232965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_50
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 439
+        width: 47
+        height: 47
+      alignment: 9
+      pivot: {x: 0.31243896, y: 0.53751326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf82d318ce717c1d0800000000000000
+      internalID: -3330667094869202693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_51
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 439
+        width: 46
+        height: 48
+      alignment: 9
+      pivot: {x: 0.29878035, y: 0.5183665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5648b1335e0ae6b40800000000000000
+      internalID: 5435458706548163685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_52
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 436
+        width: 47
+        height: 50
+      alignment: 9
+      pivot: {x: 0.34057358, y: 0.50881654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4abc17f1217aa8f0800000000000000
+      internalID: -528485615568897458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_53
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 436
+        width: 43
+        height: 50
+      alignment: 9
+      pivot: {x: 0.36674464, y: 0.50881654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937be7d497f307690800000000000000
+      internalID: -7606509980405024967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_54
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 376
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36398f91386c713d0800000000000000
+      internalID: -3235899540863675549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_55
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 377
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bf1b344da9f2550800000000000000
+      internalID: 6138295053588757297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_56
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 379
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4534cac6dca13b730800000000000000
+      internalID: 4013581162511090516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_57
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 380
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b4de2310d531af0800000000000000
+      internalID: -426895279939302651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_58
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 380
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e2543b75174e6f0800000000000000
+      internalID: -656275024205500873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_59
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 375
+        width: 49
+        height: 56
+      alignment: 9
+      pivot: {x: 0.4280383, y: 0.46064648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcd90e5cb7561410800000000000000
+      internalID: 1447440796789365936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_60
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 375
+        width: 48
+        height: 56
+      alignment: 9
+      pivot: {x: 0.40817323, y: 0.46064648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512f498e034d47250800000000000000
+      internalID: 5941607114934120981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_61
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 373
+        width: 51
+        height: 56
+      alignment: 9
+      pivot: {x: 0.4395028, y: 0.4527757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f84991871a75afd0800000000000000
+      internalID: -2331322990717220619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_62
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 371
+        width: 47
+        height: 53
+      alignment: 9
+      pivot: {x: 0.4624887, y: 0.49168426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdfeaa1ca43d85d0800000000000000
+      internalID: -3058730658128003595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_63
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 306
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1f067b419eced70800000000000000
+      internalID: 9073883624429908427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_64
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 308
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29525a3a3429a5570800000000000000
+      internalID: 8456232069547500946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_65
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 313
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba74a4dfbc9b44a80800000000000000
+      internalID: -8483451512280168533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_66
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 311
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d3a9808a0b49d30800000000000000
+      internalID: 4437365768612101406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_67
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 312
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbaaa0ba7dc322330800000000000000
+      internalID: 3684574342127725247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_68
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 305
+        width: 36
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6469235, y: 0.40358257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa47be4104298dc0800000000000000
+      internalID: -3636335636090762584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_69
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 305
+        width: 39
+        height: 64
+      alignment: 9
+      pivot: {x: 0.55651, y: 0.39669514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36a73fd6a4105910800000000000000
+      internalID: 1823980556027143738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_70
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 305
+        width: 41
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5860045, y: 0.40205213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03771ca7259248520800000000000000
+      internalID: 2703331110552696624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_71
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 305
+        width: 40
+        height: 60
+      alignment: 9
+      pivot: {x: 0.57713544, y: 0.44123128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814197690db48ad40800000000000000
+      internalID: 5595805896257639448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_72
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1501c5dc671bc30800000000000000
+      internalID: 4373407337538408940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_73
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 242
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c374ea56c3dcbc780800000000000000
+      internalID: -8661603799029364932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_74
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 243
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f9089c251a6daf0800000000000000
+      internalID: -371932542271447200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_75
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 244
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8681d04a48323afb0800000000000000
+      internalID: -4637824138666502040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_76
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 242
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e960ede51c05acf10800000000000000
+      internalID: 2290732151921837726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_77
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 245
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6702ba856f75f6e30800000000000000
+      internalID: 4498911268327596150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_78
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 246
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081d2dd204c329840800000000000000
+      internalID: 5229308363674931584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_79
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 246
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d069a9b47d3a1080800000000000000
+      internalID: -9215986115919912747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_80
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 246
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd065f827a923370800000000000000
+      internalID: 8300866880018976207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_81
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 161
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe96903ea94f1bfe0800000000000000
+      internalID: -1174889081695802897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_82
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 162
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe44d4a3993c92c0800000000000000
+      internalID: -4423597427696316675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_83
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 164
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d202e5d84afa86c00800000000000000
+      internalID: 894157647314296877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_84
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 165
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35559f699afdd5860800000000000000
+      internalID: 7520412872253986131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_85
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 164
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d62a366284a350d0800000000000000
+      internalID: -3435221210785765679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_86
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 163
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6088b2f455587c240800000000000000
+      internalID: 4811961328315631622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_87
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 164
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d308b9644cbe880800000000000000
+      internalID: -8580548857488720582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_88
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 164
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cdbbcd6fd24a5e0800000000000000
+      internalID: -1899342604555002789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_89
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 105
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cabcef23a357e20800000000000000
+      internalID: 3347645888717368417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_90
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 102
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1396c09733e567420800000000000000
+      internalID: 2627391007784462641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_91
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 105
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a06a32ccb9b631e0800000000000000
+      internalID: -2218381546069794650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_92
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 104
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad174fad60f4e690800000000000000
+      internalID: -7573664319447556704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_93
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 106
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367396ffe8ffc33e0800000000000000
+      internalID: -2072500738861746333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_94
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 105
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac31b3dd70d2dde80800000000000000
+      internalID: -8152310238671072310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_95
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 106
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d16d3af039d42910800000000000000
+      internalID: 1811811754489766357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_96
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 107
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ac97515688d6460800000000000000
+      internalID: 7236590143987632685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_97
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 42
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d16aba181a5b750800000000000000
+      internalID: 6320135230387002749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_98
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 42
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0574542665b50390800000000000000
+      internalID: -7852670924949785330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_99
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 42
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b91d39d8f9fbb90800000000000000
+      internalID: -7223879846859793545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_100
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 49
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4591bd5a6509500800000000000000
+      internalID: 400915637181437103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_101
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 47
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f1c8b2d0bcf7ed0800000000000000
+      internalID: -2413987617821679731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_102
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 47
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccffaf6e450b72a50800000000000000
+      internalID: 6496354866204180428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_103
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 48
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d52942a34ed07d0800000000000000
+      internalID: -2950451242484998832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_104
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 48
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd10d26f5250baa0800000000000000
+      internalID: -6147322921727550019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_105
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 12
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9a83f657b8bb530800000000000000
+      internalID: 3871841641148492235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_106
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 10
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8954f8a8e115d7a0800000000000000
+      internalID: -6353152008371545715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_107
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 10
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483ca6592299f0c50800000000000000
+      internalID: 6633689149954769796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_108
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 10
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9560b2c9cd087b0800000000000000
+      internalID: -5223933004454929982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z4ZKnucklesheet_109
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 10
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5152a95e50e2818b0800000000000000
+      internalID: -5181340768427956971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

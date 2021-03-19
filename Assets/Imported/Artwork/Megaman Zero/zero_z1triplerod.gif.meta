@@ -1,0 +1,3518 @@
+fileFormatVersion: 2
+guid: 244a4afe059e09b4bae475a1efb2818a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zero_z1triplerod_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1601
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a197ccf6c23d5eb0800000000000000
+      internalID: -4729568203443301984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1601
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e0388af3c3a98f0800000000000000
+      internalID: -533047361782215065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1592
+        width: 51
+        height: 45
+      alignment: 9
+      pivot: {x: 0.40302682, y: 0.63345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd977c95dfa21560800000000000000
+      internalID: 7283076879399493106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1590
+        width: 53
+        height: 48
+      alignment: 9
+      pivot: {x: 0.40002096, y: 0.6324692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5b8620188293730800000000000000
+      internalID: 3979256280314852846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_4
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1593
+        width: 50
+        height: 43
+      alignment: 9
+      pivot: {x: 0.40108734, y: 0.63144135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9662f386508ec6e00800000000000000
+      internalID: 1039460723937191529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_5
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1593
+        width: 50
+        height: 43
+      alignment: 9
+      pivot: {x: 0.39402223, y: 0.6560882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f3125195fd53950800000000000000
+      internalID: 6428289616840834967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_6
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1593
+        width: 50
+        height: 43
+      alignment: 9
+      pivot: {x: 0.40108705, y: 0.6560882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77af16feaf8a48a0800000000000000
+      internalID: -6320081145444718725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_7
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1593
+        width: 50
+        height: 43
+      alignment: 9
+      pivot: {x: 0.3940216, y: 0.63965696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551513eaedefb9260800000000000000
+      internalID: 7105553069465751893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_8
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1596
+        width: 47
+        height: 41
+      alignment: 9
+      pivot: {x: 0.40228987, y: 0.62062335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4658d59d0bfb01d30800000000000000
+      internalID: 4400227602222908772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_9
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1601
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769674fe6f3e875e0800000000000000
+      internalID: -1911527392102880921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1527
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fee003f489081c0800000000000000
+      internalID: -4503432161494372583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1525
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7b90acfd8a40130800000000000000
+      internalID: 3532133686886119414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1526
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dd70c85685daef0800000000000000
+      internalID: -95322823940645556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_13
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1524
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e970fcb39012ff0800000000000000
+      internalID: -62758767325372882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_14
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1524
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5942fddff3bec4ad0800000000000000
+      internalID: -2716537815136525163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_15
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1446
+        width: 71
+        height: 64
+      alignment: 9
+      pivot: {x: 0.27827582, y: 0.7631378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92c5aa87cee2a580800000000000000
+      internalID: -8817222579645988193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1444
+        width: 73
+        height: 67
+      alignment: 9
+      pivot: {x: 0.2693053, y: 0.76228356}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e24c4c86f1b99180800000000000000
+      internalID: -9108053098906238233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_17
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1445
+        width: 72
+        height: 65
+      alignment: 9
+      pivot: {x: 0.28135553, y: 0.7590895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bc2f2fe82940c90800000000000000
+      internalID: -7204472361226941563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_18
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1443
+        width: 74
+        height: 67
+      alignment: 9
+      pivot: {x: 0.27242258, y: 0.7677476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5534b2792d3efe610800000000000000
+      internalID: 1652790081887093589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_19
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1443
+        width: 74
+        height: 67
+      alignment: 9
+      pivot: {x: 0.272423, y: 0.7732116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb28acbf748493e0800000000000000
+      internalID: -2047866246385882168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_20
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1460
+        width: 56
+        height: 50
+      alignment: 9
+      pivot: {x: 0.34309933, y: 0.68305176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460afc5e19b0c1aa0800000000000000
+      internalID: -6189059066660151196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1388
+        width: 65
+        height: 38
+      alignment: 9
+      pivot: {x: 0.2820951, y: 0.51911366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cb1530e029db2b0800000000000000
+      internalID: -5567132975477179383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1388
+        width: 65
+        height: 38
+      alignment: 9
+      pivot: {x: 0.2709204, y: 0.5286705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a82601d37d717580800000000000000
+      internalID: -8831139457915279198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_23
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1388
+        width: 63
+        height: 38
+      alignment: 9
+      pivot: {x: 0.28670684, y: 0.49044317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe77b12fc610e060800000000000000
+      internalID: 6980604501303983871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_24
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1387
+        width: 62
+        height: 38
+      alignment: 9
+      pivot: {x: 0.27740896, y: 0.50955683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82beda1c095b6da50800000000000000
+      internalID: 6545618741758913320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_25
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1387
+        width: 62
+        height: 38
+      alignment: 9
+      pivot: {x: 0.29498193, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f6a774d92667c80800000000000000
+      internalID: -8325358433499189367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_26
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1387
+        width: 62
+        height: 38
+      alignment: 9
+      pivot: {x: 0.29498193, y: 0.51911366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26dba60f48d5f0c0800000000000000
+      internalID: -4542486815207336402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_27
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1387
+        width: 62
+        height: 38
+      alignment: 9
+      pivot: {x: 0.28326663, y: 0.49044317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9485eef8201add60800000000000000
+      internalID: 7915657063318258845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_28
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1387
+        width: 36
+        height: 39
+      alignment: 9
+      pivot: {x: 0.46973503, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70929d1eead11b2a0800000000000000
+      internalID: -6723560131736819449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_29
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1336
+        width: 74
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d78778b68ed09a0800000000000000
+      internalID: -6265095958070526627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_30
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1336
+        width: 77
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801cc699fa4ac1ca0800000000000000
+      internalID: -6044775525737774840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_31
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1336
+        width: 77
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba1ec598de280ab0800000000000000
+      internalID: -5041728275080144201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_32
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1336
+        width: 78
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d899c9fd4dd54dbe0800000000000000
+      internalID: -1453433610867795571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_33
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1336
+        width: 78
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b4f5038fe2c2060800000000000000
+      internalID: 6929965570114669335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_34
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1288
+        width: 90
+        height: 38
+      alignment: 9
+      pivot: {x: 0.20037505, y: 0.5000032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204aa302b61ef4560800000000000000
+      internalID: 7300301371209327618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_35
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1288
+        width: 93
+        height: 38
+      alignment: 9
+      pivot: {x: 0.17467958, y: 0.5173115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3499e24bdaea290800000000000000
+      internalID: -7877167708836904025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_36
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1288
+        width: 93
+        height: 38
+      alignment: 9
+      pivot: {x: 0.19943221, y: 0.5173115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a72d2af01566980800000000000000
+      internalID: -8546054115290875352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1288
+        width: 94
+        height: 38
+      alignment: 9
+      pivot: {x: 0.19213445, y: 0.5000032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210abe9adb386f350800000000000000
+      internalID: 6050168000041689106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_38
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1288
+        width: 94
+        height: 38
+      alignment: 9
+      pivot: {x: 0.181639, y: 0.49134907}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87e452584d7a2c30800000000000000
+      internalID: 4335415340869937037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_39
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1288
+        width: 70
+        height: 38
+      alignment: 9
+      pivot: {x: 0.24161378, y: 0.47404078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0151fc6de645d8810800000000000000
+      internalID: 1769163063653504272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_40
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1218
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7773dbf3d58f12cc0800000000000000
+      internalID: -3737433136355788937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_41
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1217
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1d96407eed33750800000000000000
+      internalID: 6283610988904829374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_42
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1217
+        width: 48
+        height: 57
+      alignment: 9
+      pivot: {x: 0.35933843, y: 0.36761582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bae4d93de8c85f30800000000000000
+      internalID: 4564619143543057075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_43
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1217
+        width: 51
+        height: 59
+      alignment: 9
+      pivot: {x: 0.39876273, y: 0.36537093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c164e54720788e30800000000000000
+      internalID: 4505974741162811843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_44
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1217
+        width: 47
+        height: 56
+      alignment: 9
+      pivot: {x: 0.39859757, y: 0.3652518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42800887a7403c740800000000000000
+      internalID: 5170981721205639204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_45
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1217
+        width: 47
+        height: 56
+      alignment: 9
+      pivot: {x: 0.39014712, y: 0.3723428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896bfd88f6c5ba4f0800000000000000
+      internalID: -816457273330125160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_46
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1217
+        width: 47
+        height: 56
+      alignment: 9
+      pivot: {x: 0.39014712, y: 0.3723428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740fd5218c1a6c5a0800000000000000
+      internalID: -6501331131389054905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_47
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1217
+        width: 47
+        height: 56
+      alignment: 9
+      pivot: {x: 0.40704802, y: 0.3723428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e611073525d057c30800000000000000
+      internalID: 4356402861789155694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_48
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1217
+        width: 44
+        height: 53
+      alignment: 9
+      pivot: {x: 0.40071106, y: 0.36511692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c2e8555a8fb1af0800000000000000
+      internalID: -424472350867706740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_49
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1217
+        width: 31
+        height: 39
+      alignment: 9
+      pivot: {x: 0.48719049, y: 0.50000626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e0f34cb0c930dd0800000000000000
+      internalID: -2520999792046305777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_50
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1139
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2c962e85cc1eb60800000000000000
+      internalID: 7773719113945957063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_51
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1139
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a18b5335173a4b40800000000000000
+      internalID: 5425209265316659620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_52
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1139
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e2a7e689d34c860800000000000000
+      internalID: 7549226600277618292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_53
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1139
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff78c087fd545db20800000000000000
+      internalID: 3158507539764381695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_54
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1138
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8798c27a7cb41f3d0800000000000000
+      internalID: -3174672941444200072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_55
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1052
+        width: 68
+        height: 77
+      alignment: 9
+      pivot: {x: 0.28185776, y: 0.26882577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78a15edb27447160800000000000000
+      internalID: 7022315972716505211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_56
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1052
+        width: 69
+        height: 77
+      alignment: 9
+      pivot: {x: 0.24423638, y: 0.2566441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ba8396ca5ef1ea0800000000000000
+      internalID: -5899744458169603218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_57
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1052
+        width: 68
+        height: 77
+      alignment: 9
+      pivot: {x: 0.27920017, y: 0.26530635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c281d6010263a50800000000000000
+      internalID: 6500418367077755962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_58
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1052
+        width: 70
+        height: 79
+      alignment: 9
+      pivot: {x: 0.28203562, y: 0.25858355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5033e4b9313465000800000000000000
+      internalID: 24280599486149381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_59
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1052
+        width: 70
+        height: 79
+      alignment: 9
+      pivot: {x: 0.27598137, y: 0.26931337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d3764e28d774150800000000000000
+      internalID: 5856787841549811026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_60
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1052
+        width: 53
+        height: 62
+      alignment: 9
+      pivot: {x: 0.34806448, y: 0.31543362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f15c437a3da81b60800000000000000
+      internalID: 7717108428053434872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_61
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 966
+        width: 30
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5332611, y: 0.28251922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8da21966e6ab3f0800000000000000
+      internalID: -884272990023657252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_62
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 966
+        width: 30
+        height: 78
+      alignment: 9
+      pivot: {x: 0.52217406, y: 0.27399072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df66be2d9a3bf6680800000000000000
+      internalID: -8759585208242837763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_63
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 966
+        width: 30
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5221736, y: 0.29867876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18a3392764454e60800000000000000
+      internalID: 7945832327428679709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_64
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 966
+        width: 30
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5443481, y: 0.29599446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3348a16eaf52e60800000000000000
+      internalID: 7937025784504660944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_65
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 966
+        width: 30
+        height: 75
+      alignment: 9
+      pivot: {x: 0.52217305, y: 0.2826896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efdaf520957447f0800000000000000
+      internalID: -629248785952088087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_66
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 966
+        width: 30
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5332611, y: 0.2782544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d747e8aff30b5b8a0800000000000000
+      internalID: -6289927515719961475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_67
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 966
+        width: 30
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5443471, y: 0.2938705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec94bb46c71e9ab60800000000000000
+      internalID: 7757979757504580046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_68
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 966
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11782c64553de7c20800000000000000
+      internalID: 3206232347947206417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_69
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 853
+        width: 30
+        height: 87
+      alignment: 9
+      pivot: {x: 0.54560065, y: 0.23792838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cf592c380ca4290800000000000000
+      internalID: -7905294523757626282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_70
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 853
+        width: 31
+        height: 91
+      alignment: 9
+      pivot: {x: 0.51470995, y: 0.22439273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a26820d6034f760800000000000000
+      internalID: 7490665324975893002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_71
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 853
+        width: 31
+        height: 90
+      alignment: 9
+      pivot: {x: 0.48529002, y: 0.2314643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88c1449dd5c33c50800000000000000
+      internalID: 6643871430767397004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_72
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 853
+        width: 31
+        height: 91
+      alignment: 9
+      pivot: {x: 0.48529002, y: 0.22439273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66759551396e9ec00800000000000000
+      internalID: 930528317421475686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_73
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 853
+        width: 30
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5152003, y: 0.21938181}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b543988f61d75a740800000000000000
+      internalID: 5162670085462635611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_74
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 853
+        width: 30
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5304006, y: 0.20337565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45134e49ee0ad7fa0800000000000000
+      internalID: -5801303798422687404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_75
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 853
+        width: 31
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5147105, y: 0.18889411}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a80ef70bda8edde0800000000000000
+      internalID: -1306454168554305372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_76
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 853
+        width: 31
+        height: 106
+      alignment: 9
+      pivot: {x: 0.48529053, y: 0.18595915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9d1b51d8400b6a0800000000000000
+      internalID: -6435638863511561802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_77
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 853
+        width: 31
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5147105, y: 0.18889411}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a7006012c550ce0800000000000000
+      internalID: -1439643208970634702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_78
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 853
+        width: 30
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5304006, y: 0.18037087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c7f2cecdda8bdd0800000000000000
+      internalID: -2470033231245771682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_79
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 853
+        width: 30
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5152008, y: 0.24025138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cef65d14b44e1de0800000000000000
+      internalID: -1360574497042268472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_80
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 789
+        width: 27
+        height: 47
+      alignment: 9
+      pivot: {x: 0.6162341, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd636e4a00ffd4340800000000000000
+      internalID: 4849812751979525851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_81
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 789
+        width: 28
+        height: 49
+      alignment: 9
+      pivot: {x: 0.64944375, y: 0.4430679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937430921cb748df0800000000000000
+      internalID: -178882015640991943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_82
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 769
+        width: 28
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5249067, y: 0.56209785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b425f835158240f0800000000000000
+      internalID: -1134197829947546442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_83
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 769
+        width: 29
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5360723, y: 0.6179433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a9ab35d95746120800000000000000
+      internalID: 2406177419497740802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_84
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 772
+        width: 31
+        height: 65
+      alignment: 9
+      pivot: {x: 0.58998746, y: 0.58046967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63544f4c0e18cea90800000000000000
+      internalID: -7283303694987934410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_85
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 772
+        width: 33
+        height: 65
+      alignment: 9
+      pivot: {x: 0.6235629, y: 0.597583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ff9afda4e958fc0800000000000000
+      internalID: -3493211891538723053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_86
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 772
+        width: 32
+        height: 65
+      alignment: 9
+      pivot: {x: 0.62742424, y: 0.59061277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b455d2c771917c0800000000000000
+      internalID: -4100220163640177770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_87
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 772
+        width: 32
+        height: 65
+      alignment: 9
+      pivot: {x: 0.62742424, y: 0.59061277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c597edca0ac7b15c0800000000000000
+      internalID: -4243661194329687716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_88
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 772
+        width: 32
+        height: 65
+      alignment: 9
+      pivot: {x: 0.6557417, y: 0.597583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50da59e08cb4f360800000000000000
+      internalID: 7202588965929144411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_89
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 772
+        width: 33
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5274584, y: 0.5242713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef71e218b6b0e1270800000000000000
+      internalID: 8223022525981792254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_90
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 781
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cba09158b455350800000000000000
+      internalID: 6004788713191292040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_91
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 714
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cea4c46310c7cd90800000000000000
+      internalID: -7077477099861922106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_92
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 714
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a78544474e3a420800000000000000
+      internalID: 2640204994583231066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_93
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 702
+        width: 51
+        height: 50
+      alignment: 9
+      pivot: {x: 0.27875504, y: 0.6773132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe3e2260facb8f40800000000000000
+      internalID: 5731898084547247860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_94
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 701
+        width: 52
+        height: 51
+      alignment: 9
+      pivot: {x: 0.26751062, y: 0.68173873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3235f1d6191d710800000000000000
+      internalID: 1716312830867874781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_95
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 703
+        width: 52
+        height: 50
+      alignment: 9
+      pivot: {x: 0.32175797, y: 0.6450745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a331c913eda173090800000000000000
+      internalID: -8054939866911468742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_96
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 703
+        width: 50
+        height: 49
+      alignment: 9
+      pivot: {x: 0.28238952, y: 0.67270833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1a9744f660ceb00800000000000000
+      internalID: 859068703880880630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_97
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 703
+        width: 52
+        height: 49
+      alignment: 9
+      pivot: {x: 0.31400886, y: 0.66448355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fd1ab54841842d0800000000000000
+      internalID: -3294360568715944141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_98
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 702
+        width: 50
+        height: 49
+      alignment: 9
+      pivot: {x: 0.3065686, y: 0.65625995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0490e2953cd0899c0800000000000000
+      internalID: -3920368342960043712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_99
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 708
+        width: 47
+        height: 47
+      alignment: 9
+      pivot: {x: 0.3885368, y: 0.5600196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4931221c3e5cde2b0800000000000000
+      internalID: -5553565183489469548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_101
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 710
+        width: 32
+        height: 43
+      alignment: 9
+      pivot: {x: 0.44962883, y: 0.5187449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4cc2199f2642420800000000000000
+      internalID: 2604315308548998317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_102
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 642
+        width: 69
+        height: 45
+      alignment: 9
+      pivot: {x: 0.2258476, y: 0.5107788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f92ddf9fc1b51e60800000000000000
+      internalID: 7932441823981414905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_103
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 642
+        width: 69
+        height: 45
+      alignment: 9
+      pivot: {x: 0.21773894, y: 0.5166477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a26d3872c44a4f0800000000000000
+      internalID: -818445499675301227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_104
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 642
+        width: 68
+        height: 45
+      alignment: 9
+      pivot: {x: 0.2521434, y: 0.533294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6579852e5bacfb3b0800000000000000
+      internalID: -5494450137833367722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_105
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 642
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.22760843, y: 0.49167752}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5b6951afc4825e0800000000000000
+      internalID: -1934211402967894530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_106
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 642
+        width: 68
+        height: 45
+      alignment: 9
+      pivot: {x: 0.2521434, y: 0.5000014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9cb5a38fbc40cc0800000000000000
+      internalID: -3745644723073988099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_107
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 643
+        width: 67
+        height: 45
+      alignment: 9
+      pivot: {x: 0.23726416, y: 0.49167752}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1620616dd4d1540800000000000000
+      internalID: 4980222344829231606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_108
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 643
+        width: 59
+        height: 45
+      alignment: 9
+      pivot: {x: 0.25877252, y: 0.48335505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34a2d036ead29dd0800000000000000
+      internalID: -2480679762531277764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_109
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 563
+        width: 57
+        height: 68
+      alignment: 9
+      pivot: {x: 0.34605208, y: 0.36579356}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc05395d46e74b30800000000000000
+      internalID: 4271635991467723980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_110
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 561
+        width: 58
+        height: 70
+      alignment: 9
+      pivot: {x: 0.33055115, y: 0.34455568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51d03e7622bc37d0800000000000000
+      internalID: -2937276978556776101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_111
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 562
+        width: 57
+        height: 66
+      alignment: 9
+      pivot: {x: 0.3768415, y: 0.36704415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f7cd6d3c438d030800000000000000
+      internalID: 3519621124518084493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_112
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 562
+        width: 57
+        height: 67
+      alignment: 9
+      pivot: {x: 0.37684122, y: 0.36378956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa03c415a6c33af0800000000000000
+      internalID: -417771928095094111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_113
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 562
+        width: 57
+        height: 67
+      alignment: 9
+      pivot: {x: 0.3706831, y: 0.36902857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0a16472540b1820800000000000000
+      internalID: 2889908338074689741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_114
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 562
+        width: 56
+        height: 67
+      alignment: 9
+      pivot: {x: 0.35583824, y: 0.35855147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0680f09c3b80c00a0800000000000000
+      internalID: -6914141759655180192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_115
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 562
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f36525a64896f1c0800000000000000
+      internalID: -4470218150932814855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_116
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 459
+        width: 25
+        height: 92
+      alignment: 9
+      pivot: {x: 0.47191957, y: 0.27490136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a31ce4ea205b210800000000000000
+      internalID: 1347986611136182943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_117
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 459
+        width: 27
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48699895, y: 0.27732176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123a6df92bb4dc860800000000000000
+      internalID: 7551775380728095521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_118
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 459
+        width: 32
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5767803, y: 0.27520135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560a18e1869d80030800000000000000
+      internalID: 3461255354845864037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_119
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 459
+        width: 30
+        height: 89
+      alignment: 9
+      pivot: {x: 0.66379905, y: 0.27520135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552b73b9da25ec450800000000000000
+      internalID: 6110912649975280213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_120
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 459
+        width: 22
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5638164, y: 0.27125773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b40760ab86bb8c10800000000000000
+      internalID: 2056938365632578738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_121
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 459
+        width: 24
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5731227, y: 0.27125773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114901e5438460080800000000000000
+      internalID: -9221603797240867823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_122
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 459
+        width: 22
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5638164, y: 0.28766584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a257eb886d185e410800000000000000
+      internalID: 1505752408842466602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_123
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 402
+        width: 33
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5405937, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893234e3e037c6f00800000000000000
+      internalID: 1111389713064993688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_124
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 402
+        width: 66
+        height: 42
+      alignment: 9
+      pivot: {x: 0.78923106, y: 0.4840524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27d02caa19d6c230800000000000000
+      internalID: 3658850455865317162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_125
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 402
+        width: 67
+        height: 42
+      alignment: 9
+      pivot: {x: 0.79491115, y: 0.47607857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba893dc36d02a8760800000000000000
+      internalID: 7460811837208238251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_126
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 402
+        width: 63
+        height: 42
+      alignment: 9
+      pivot: {x: 0.7817405, y: 0.4840524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fb487876f4e9280800000000000000
+      internalID: -9034696496384786574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_127
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 402
+        width: 64
+        height: 42
+      alignment: 9
+      pivot: {x: 0.7721057, y: 0.46810478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81016a47b1f772110800000000000000
+      internalID: 1236096378634375192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_128
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 401
+        width: 64
+        height: 42
+      alignment: 9
+      pivot: {x: 0.7773385, y: 0.5079738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f735aef54d9759cc0800000000000000
+      internalID: -3704921165393144961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_129
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 401
+        width: 64
+        height: 42
+      alignment: 9
+      pivot: {x: 0.777338, y: 0.4840524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b9603edb9821540800000000000000
+      internalID: 4977191986848504602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_130
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 401
+        width: 60
+        height: 42
+      alignment: 9
+      pivot: {x: 0.76233727, y: 0.47607857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1fba4582dd16a50800000000000000
+      internalID: 6512729701443432870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_131
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 339
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe2e1b7f189f1030800000000000000
+      internalID: 3467657499075555059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_132
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 339
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04ae5902e6f886d0800000000000000
+      internalID: -2987866902080084980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_133
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 339
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbde7f0425f41f800800000000000000
+      internalID: 644383436386594235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_134
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 339
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c90a696f84f7440800000000000000
+      internalID: 4935743940547615786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_135
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 339
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff512f3f06c500f0800000000000000
+      internalID: -1151296360937332738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_136
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 339
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612e891cad71b6470800000000000000
+      internalID: 8388824959226012182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_137
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 339
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372896af498f0c360800000000000000
+      internalID: 7188018324023378547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_138
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 339
+        width: 25
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fce846ede70dc70800000000000000
+      internalID: 8993827949493800858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_139
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 260
+        width: 63
+        height: 59
+      alignment: 9
+      pivot: {x: 0.45389304, y: 0.30982634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65d1944aec393250800000000000000
+      internalID: 5924833761653020011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_140
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 260
+        width: 63
+        height: 60
+      alignment: 9
+      pivot: {x: 0.39789787, y: 0.322935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e25809cb16cd420800000000000000
+      internalID: 2656105342748143206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_141
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 260
+        width: 68
+        height: 60
+      alignment: 9
+      pivot: {x: 0.42514825, y: 0.3097758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabe30bb7c8a8a870800000000000000
+      internalID: 8694384656428297134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_142
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 260
+        width: 68
+        height: 60
+      alignment: 9
+      pivot: {x: 0.41740775, y: 0.315772}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e678644d4a8d16ef0800000000000000
+      internalID: -116573912887294098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_145
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 260
+        width: 58
+        height: 59
+      alignment: 9
+      pivot: {x: 0.4582446, y: 0.31264898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f003794b840c810800000000000000
+      internalID: 1783505392906538813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_146
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 260
+        width: 61
+        height: 61
+      alignment: 9
+      pivot: {x: 0.40076685, y: 0.27996126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e591313886ad0c080800000000000000
+      internalID: -9169088698915808930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_147
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 183
+        width: 54
+        height: 54
+      alignment: 9
+      pivot: {x: 0.38636667, y: 0.45320892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f5a92683acf12c0800000000000000
+      internalID: -4458622762552238207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_148
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 177
+        width: 54
+        height: 70
+      alignment: 9
+      pivot: {x: 0.3863664, y: 0.41749594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58eb2f6d131d21750800000000000000
+      internalID: 6274307242870357637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_149
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 177
+        width: 54
+        height: 70
+      alignment: 9
+      pivot: {x: 0.37968218, y: 0.41749594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0621cd9309f39570800000000000000
+      internalID: 8472389117940934156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_150
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 179
+        width: 53
+        height: 68
+      alignment: 9
+      pivot: {x: 0.37741145, y: 0.40445352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064537e39f6d1bae0800000000000000
+      internalID: -1535209631973682080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_151
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 187
+        width: 56
+        height: 49
+      alignment: 9
+      pivot: {x: 0.3453053, y: 0.4116024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb48ffbbcc4c2080800000000000000
+      internalID: -9210902699896714278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_153
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 176
+        width: 49
+        height: 71
+      alignment: 9
+      pivot: {x: 0.30847356, y: 0.41865775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0388a2421b12be0800000000000000
+      internalID: -1503726031674527548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_155
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 105
+        width: 53
+        height: 48
+      alignment: 9
+      pivot: {x: 0.2945994, y: 0.44845566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e08ad6099de512a0800000000000000
+      internalID: -6767241623553539872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_156
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 95
+        width: 53
+        height: 70
+      alignment: 9
+      pivot: {x: 0.29092723, y: 0.45087367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074f168c73d512d20800000000000000
+      internalID: 3251982900104655984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_157
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 94
+        width: 52
+        height: 70
+      alignment: 9
+      pivot: {x: 0.2942546, y: 0.46724898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f393e030e2a2f7f10800000000000000
+      internalID: 2269579114326145343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_158
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 93
+        width: 53
+        height: 68
+      alignment: 9
+      pivot: {x: 0.2837179, y: 0.46628547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3597eebec45f29e70800000000000000
+      internalID: 9120621906103269715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_159
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 104
+        width: 54
+        height: 49
+      alignment: 9
+      pivot: {x: 0.28064755, y: 0.43761677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a45f1121f194680800000000000000
+      internalID: -8770444636856169967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_161
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 94
+        width: 54
+        height: 72
+      alignment: 9
+      pivot: {x: 0.28772312, y: 0.44162452}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a3b60a46a7684a0800000000000000
+      internalID: -6591446432003442088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_163
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 15
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaac85f0ad9f136e0800000000000000
+      internalID: -1859430456171640150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_164
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 9
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011e6a22544a242d0800000000000000
+      internalID: -3295891360440721136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_165
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 10
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bac50e0e286045f0800000000000000
+      internalID: -774504588894680395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_166
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 13
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03e8b9431b6265c0800000000000000
+      internalID: -4223695769934699761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_167
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 15
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6ef5025c76aec40800000000000000
+      internalID: 5542356387782190804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zero_z1triplerod_169
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 11
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e82c1fe3292f9770800000000000000
+      internalID: 8619653446122612960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

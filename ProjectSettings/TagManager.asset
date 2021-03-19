@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Items
+  - GameMaster
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - Background
+  - Mainground
+  - Foreground
+  - 
+  - 
+  - Push Box
+  - Hit Box
+  - Hurt Box
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background & Tilemap
+    uniqueID: 3491593001
+    locked: 1
+  - name: Objects
+    uniqueID: 436271429
+    locked: 1
+  - name: Default
+    uniqueID: 0
+    locked: 1
+  - name: Foreground
+    uniqueID: 2786366375
+    locked: 0
+  - name: UI
+    uniqueID: 3405923975
+    locked: 0
