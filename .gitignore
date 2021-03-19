@@ -13,6 +13,8 @@
 *.userprefs
 *.pidb
 *.booproj
+*.editorconfig
+*.collabignore
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -21,6 +23,7 @@
 sysinfo.txt
 
 \.vscode/
+\.vs/
 
 Builds/
 
