@@ -29,10 +29,6 @@ namespace DeaLoux.Player
             base.PhysicsUpdate();
         }
 
-        public virtual void SetAnim(string name)
-        {
-            _animBoolName = name;
-            _animID = Animator.StringToHash(name);
-        }
+        public virtual void SetAnim(string name) => _animBoolName = name;
     }
 }

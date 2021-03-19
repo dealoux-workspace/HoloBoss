@@ -20,6 +20,7 @@ namespace DeaLoux.Player
         public override void LogicUpdate()
         {
             base.LogicUpdate();
+            //_grounded = _player.Grounded();
 
             if (_animFinished)
                 ChangeStateSH(_player.AerialState);

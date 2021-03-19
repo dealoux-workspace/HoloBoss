@@ -26,6 +26,10 @@ namespace DeaLoux.Player
         public override void LogicUpdate()
         {
             base.LogicUpdate();
+            _grounded = _player.Grounded();
+            _jumpInput = _player.InputHandler.JumpInput;
+            _dashInput = _player.InputHandler.DashInput;
+            _xInput = _player.InputHandler.NormInputX;
 
             if (isActionDone)
             {

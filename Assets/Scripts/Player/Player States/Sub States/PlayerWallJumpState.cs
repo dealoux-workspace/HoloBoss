@@ -15,6 +15,7 @@ namespace DeaLoux.Player
         public override void LogicUpdate()
         {
             base.LogicUpdate();
+            _xInput = _player.InputHandler.NormInputX;
             _player.HandleMovement(_playerData.wallJumpClimb.x * -_playerData.FacingDir, _playerData.wallJumpClimb.y);
         }
     }

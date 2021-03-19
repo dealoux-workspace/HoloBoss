@@ -30,6 +30,11 @@ namespace DeaLoux.Player
 
             if (!_exitingState)
             {
+                _grounded = _player.Grounded();
+                _xInput = _player.InputHandler.NormInputX;
+                _jumpInput = _player.InputHandler.JumpInput;
+                _dashInput = _player.InputHandler.DashInput;
+
                 if (_jumpInput && _player.JumpState.CanJump())
                 {
                     ChangeStateSH(_player.JumpState);
@@ -44,66 +49,34 @@ namespace DeaLoux.Player
                 }
                 else if (_primAtkInput)
                 {
-                    switch (_playerData.slot1.type)
+                    switch (_atkToggled ? _playerData.slot2.type : _playerData.slot1.type)
                     {
                         case EquipmentType.FOUR_WAY:
                             if (_stateMachine.CurrState is PlayerMoveState)
-                                ChangeStateSH(_player.PrimAtkMoveState);
+                                ChangeStateSH(_player.AtkMoveState);
                             else
                             {
-                                ChangeStateSH(_player.PrimAtkIdle4State, true);
-                            }
-                            break;
-
-                        case EquipmentType.EIGHT_WAY:
-                            ChangeStateSH(_player.PrimAtkIdle8State, true);
-                            break;
-                    }
-                }
-                else if (_primAtkCharged)
-                {
-                    switch (_playerData.slot1.Ctype)
-                    {
-                        case EquipmentType.FOUR_WAY:
-                            _player.AtkChargedState.SetAnim("primAtkIdle4Charged");
-                            break;
-
-                        case EquipmentType.EIGHT_WAY:
-                            _player.AtkChargedState.SetAnim("primAtkIdle8Charged");
-                            break;
-                    }
-                    ChangeStateSH(_player.AtkChargedState, true);
-                }
-
-                else if (_secAtkInput)
-                {
-                    switch (_playerData.slot2.type)
-                    {
-                        case EquipmentType.FOUR_WAY:
-                            if (_stateMachine.CurrState is PlayerMoveState)
-                                ChangeStateSH(_player.SecAtkMoveState);
-                            else
-                            {
-                                ChangeStateSH(_player.SecAtkIdle4State, true);
+                                _player.AtkIdle4State.SetToggleStatus(_atkToggled);
+                                ChangeStateSH(_player.AtkIdle4State, true);
                             }
 
                             break;
 
                         case EquipmentType.EIGHT_WAY:
-                            ChangeStateSH(_player.SecAtkIdle8State, true);
+                            ChangeStateSH(_player.AtkIdle8State, true);
                             break;
                     }
                 }
-                else if (_secAtkCharged)
+                else if (_player.InputHandler.AtkCharged)
                 {
-                    switch (_playerData.slot2.Ctype)
+                    switch (_atkToggled ? _playerData.slot2.Ctype : _playerData.slot1.Ctype)
                     {
                         case EquipmentType.FOUR_WAY:
-                            _player.AtkChargedState.SetAnim("secAtkIdle4Charged");
+                            _player.AtkChargedState.SetAnim("atkIdle4Charged");
                             break;
 
                         case EquipmentType.EIGHT_WAY:
-                            _player.AtkChargedState.SetAnim("secAtkIdle8Charged");
+                            _player.AtkChargedState.SetAnim("atkIdle8Charged");
                             break;
                     }
                     ChangeStateSH(_player.AtkChargedState, true);

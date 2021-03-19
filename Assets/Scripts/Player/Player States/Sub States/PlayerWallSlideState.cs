@@ -17,11 +17,22 @@ namespace DeaLoux.Player
 
             if (!_exitingState)
             {
+                _grounded = _player.Grounded();
+                _wallTouched = _player.WallTouched();
+                _primAtkInput = _player.InputHandler.PrimAtkInput;
+                _xInput = _player.InputHandler.NormInputX;
+                _jumpInput = _player.InputHandler.JumpInput;
+
                 _player.MoveVertically(-_playerData.wallSlideVelocity);
 
                 if (_grounded)
                 {
                     ChangeStateSH(_player.IdleState);
+                }
+                else if (_primAtkInput)
+                {
+                    ChangeStateSH(_player.AtkWallState);
+
                 }
                 else if (_jumpInput && _xInput == _playerData.FacingDir && _player.WallJumpState.CoolDownDone())
                 {
@@ -37,23 +48,10 @@ namespace DeaLoux.Player
                     _player.AerialState.StartWallLeapCoyoteTime();
                     ChangeStateSH(_player.AerialState);
                 }
-                else if (_primAtkInput)
-                {
-                    ChangeStateSH(_player.PrimAtkWallState);
-                }
-                else if (_secAtkInput)
-                {
-                    ChangeStateSH(_player.SecAtkWallState);
-                }
-                else if (_primAtkCharged)
+                else if (_player.InputHandler.AtkCharged)
                 {
                     _player.Flip();
-                    ChangeStateSH(_player.PrimAtkWallChargedState, true);
-                }
-                else if (_secAtkCharged)
-                {
-                    _player.Flip();
-                    ChangeStateSH(_player.SecAtkWallChargedState, true);
+                    ChangeStateSH(_player.AtkWallChargedState, true);
                 }
             }
         }

@@ -22,27 +22,16 @@ namespace DeaLoux.Player
         public PlayerWallJumpState WallJumpState { get; private set; }
         public PlayerWallLeapState WallLeapState { get; private set; }
 
+        // Attack
+        public PlayerAtkIdle4State AtkIdle4State { get; private set; }
+        public PlayerAtkIdle8State AtkIdle8State { get; private set; }
         public PlayerAtkChargedState AtkChargedState { get; private set; }
-
-        // Primary Attack
-        public PlayerPrimAtkIdle4State PrimAtkIdle4State { get; private set; }
-        public PlayerAtkIdle8State PrimAtkIdle8State { get; private set; }
-        public PlayerAtkWallChargedState PrimAtkWallChargedState { get; private set; }
-        public PlayerAtkMoveState PrimAtkMoveState { get; private set; }
-        public PlayerAtkDashState PrimAtkDashState { get; private set; }
-        public PlayerAtkAerial4State PrimAtkAerial4State { get; private set; }
-        public PlayerAtkAerial8State PrimAtkAerial8State { get; private set; }
-        public PlayerAtkWallState PrimAtkWallState { get; private set; }
-
-        // Secondary Attack
-        public PlayerSecAtkIdle4State SecAtkIdle4State { get; private set; }
-        public PlayerAtkIdle8State SecAtkIdle8State { get; private set; }
-        public PlayerAtkWallChargedState SecAtkWallChargedState { get; private set; }
-        public PlayerAtkMoveState SecAtkMoveState { get; private set; }
-        public PlayerAtkDashState SecAtkDashState { get; private set; }
-        public PlayerAtkAerial4State SecAtkAerial4State { get; private set; }
-        public PlayerAtkAerial8State SecAtkAerial8State { get; private set; }
-        public PlayerAtkWallState SecAtkWallState { get; private set; }
+        public PlayerAtkWallChargedState AtkWallChargedState { get; private set; }
+        public PlayerAtkMoveState AtkMoveState { get; private set; }
+        public PlayerAtkDashState AtkDashState { get; private set; }
+        public PlayerAtkAerial4State AtkAerial4State { get; private set; }
+        public PlayerAtkAerial8State AtkAerial8State { get; private set; }
+        public PlayerAtkWallState AtkWallState { get; private set; }
         #endregion
 
         #region Components
@@ -51,7 +40,7 @@ namespace DeaLoux.Player
         #endregion
 
         #region Raycast Physics
-        float gravity;
+        private float gravity;
         public CharacterController2D PlayerController { get; private set; }
         #endregion
 
@@ -60,14 +49,13 @@ namespace DeaLoux.Player
         Data.PlayerData data;
         [SerializeField]
         Transform DirectionIndicator;
-        [SerializeField]
-        HitBox hitPoint;
+        public HitBox hitPoint;
         public event Action<HitBox> AttackDelegate;
         public event Action<HitBox> ChargedAttackDelegate;
         #endregion
 
         #region Unity Callback Functions
-        void Awake()
+        private void Awake()
         {
             // StateMachine init
             StateMachine = gameObject.AddComponent<PlayerStateMachine>();
@@ -82,30 +70,20 @@ namespace DeaLoux.Player
             WallJumpState = new PlayerWallJumpState(this, StateMachine, data, "aerial");
             WallLeapState = new PlayerWallLeapState(this, StateMachine, data, "aerial");
 
+            AtkIdle4State = new PlayerAtkIdle4State(this, StateMachine, data, "atkIdle4Way");
+            AtkIdle8State = new PlayerAtkIdle8State(this, StateMachine, data, "atkIdle8Way");
             AtkChargedState = new PlayerAtkChargedState(this, StateMachine, data, "automata");
+            AtkMoveState = new PlayerAtkMoveState(this, StateMachine, data, "atkMove");
+            AtkDashState = new PlayerAtkDashState(this, StateMachine, data, "atkDash");
+            AtkAerial4State = new PlayerAtkAerial4State(this, StateMachine, data, "atkAerial4Way");
+            AtkAerial8State = new PlayerAtkAerial8State(this, StateMachine, data, "atkAerial8Way");
+            AtkWallChargedState = new PlayerAtkWallChargedState(this, StateMachine, data, "atkWallCharged");
+            AtkWallState = new PlayerAtkWallState(this, StateMachine, data, "atkWall");
 
-            // Primary Attack
-            PrimAtkIdle4State = new PlayerPrimAtkIdle4State(this, StateMachine, data, "primAtkIdle4Way");
-            PrimAtkIdle8State = new PlayerAtkIdle8State(this, StateMachine, data, "primAtkIdle8Way");
-            PrimAtkMoveState = new PlayerAtkMoveState(this, StateMachine, data, "primAtkMove");
-            PrimAtkDashState = new PlayerAtkDashState(this, StateMachine, data, "primAtkDash");
-            PrimAtkAerial4State = new PlayerAtkAerial4State(this, StateMachine, data, "primAtkAerial4Way");
-            PrimAtkAerial8State = new PlayerAtkAerial8State(this, StateMachine, data, "primAtkAerial8Way");
-            PrimAtkWallChargedState = new PlayerAtkWallChargedState(this, StateMachine, data, "primAtkWallCharged");
-            PrimAtkWallState = new PlayerAtkWallState(this, StateMachine, data, "primAtkWall");
-
-            // Secondary Attack
-            SecAtkIdle4State = new PlayerSecAtkIdle4State(this, StateMachine, data, "secAtkIdle4Way");
-            SecAtkIdle8State = new PlayerAtkIdle8State(this, StateMachine, data, "secAtkIdle8Way");
-            SecAtkMoveState = new PlayerAtkMoveState(this, StateMachine, data, "secAtkMove");
-            SecAtkDashState = new PlayerAtkDashState(this, StateMachine, data, "secAtkDash");
-            SecAtkAerial4State = new PlayerAtkAerial4State(this, StateMachine, data, "secAtkAerial4Way");
-            SecAtkAerial8State = new PlayerAtkAerial8State(this, StateMachine, data, "secAtkAerial8Way");
-            SecAtkWallChargedState = new PlayerAtkWallChargedState(this, StateMachine, data, "secAtkWallCharged");
-            SecAtkWallState = new PlayerAtkWallState(this, StateMachine, data, "secAtkWall");
+            ChargedAttackDelegate += data.slot1.DoChargedAttack;
         }
 
-        void Start()
+        private void Start()
         {
             // Player's components init
             Anim = GetComponent<Animator>();
@@ -123,24 +101,23 @@ namespace DeaLoux.Player
             // StateMachine init
             StateMachine.Initialize(IdleState);
             AttackDelegate += data.slot1.DoAttack;
-            ChargedAttackDelegate += data.slot1.DoChargedAttack;
         }
 
-        void Update()
+        private void Update()
         {
-            HandleDirectionIndicator();
+            HandleHitPoint();
 
             StateMachine.CurrState.LogicUpdate();
 
             GravityCheck();
         }
 
-        void FixedUpdate()
+        private void FixedUpdate()
         {
             StateMachine.CurrState.PhysicsUpdate();
         }
 
-        void OnTriggerCollidingEvent(Collider2D collision)
+        private void OnTriggerCollidingEvent(Collider2D collision)
         {
             ContactPoint2D[] contacts = new ContactPoint2D[2];
 
@@ -199,16 +176,20 @@ namespace DeaLoux.Player
 
         #region Animation Event Functions
         void AnimTrigger() => StateMachine.CurrState.AnimTrigger();
+
         void AnimFinishTrigger() => StateMachine.CurrState.AnimFinishTrigger();
+
         void HandleAttack() => AttackDelegate?.Invoke(hitPoint);
-        void HandleChargedAttack() => ChargedAttackDelegate?.Invoke(hitPoint);
 
         public void ResetAttackDelegate() => AttackDelegate = null;
+
+        void HandleChargedAttack() => ChargedAttackDelegate?.Invoke(hitPoint);
+
         public void ResetChargedAttackDelegate() => ChargedAttackDelegate = null;
         #endregion
 
         #region Other Functions
-        void HandleDirectionIndicator()
+        private void HandleHitPoint()
         {
             DirectionIndicator.rotation = Quaternion.Euler(0, 0, data.LookAngle - 45f);
         }
@@ -221,7 +202,7 @@ namespace DeaLoux.Player
 
         void GetHitPoint(float angle)
         {
-            hitPoint.gameObject.transform.position = hitPoint.pos[angle] * (InputHandler.SecAtkInput ? data.slot2.weaponOffset : data.slot1.weaponOffset) + transform.position;
+            hitPoint.gameObject.transform.position = hitPoint.pos[angle] * (InputHandler.AtkToggleInput ? data.slot2.weaponOffset : data.slot1.weaponOffset) + transform.position;
             hitPoint.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
 

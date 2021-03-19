@@ -13,6 +13,7 @@ namespace DeaLoux.Player
         {
             base.LogicUpdate();
 
+            _primAtkInput = _player.InputHandler.PrimAtkInput;
             _player.MoveHorizontally(_playerData.movementSpeed * _playerData.FacingDir);
 
             _player.ShouldFlip(_xInput);

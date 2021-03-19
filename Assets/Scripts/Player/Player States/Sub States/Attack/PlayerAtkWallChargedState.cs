@@ -12,7 +12,7 @@ namespace DeaLoux.Player
         public override void Enter()
         {
             base.Enter();
-            
+            _player.InputHandler.TickPrimAtkCharged();
         }
 
         public override void LogicUpdate()
@@ -21,10 +21,6 @@ namespace DeaLoux.Player
 
             if (_animFinished)
             {
-                if (_primAtkCharged)
-                    _player.InputHandler.TickPrimAtkCharged();
-                if (_secAtkCharged)
-                    _player.InputHandler.TickSecAtkCharged();
                 _stateMachine.ChangeToPreviousState();
             }
         }

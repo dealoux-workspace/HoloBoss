@@ -15,31 +15,24 @@ namespace DeaLoux.Player
         public bool JumpInputTap { get; private set; }
         public bool DashInput { get; private set; }
         public bool PrimAtkInput { get; private set; }
-        public bool SecAtkInput { get; private set; }
-        public bool PrimAtkCharged { get; private set; }
-        public bool SecAtkCharged { get; private set; }
+        public bool AtkToggleInput { get; private set; }
+        public bool AtkCharged { get; private set; }
         public bool MenuInput { get; private set; }
         public bool CycleInput { get; private set; }
 
         [SerializeField]
         Data.PlayerData data;
         [SerializeField]
-        GameObject primChargingFX;
-        [SerializeField]
-        GameObject secChargingFX;
+        GameObject chargingFX;
         Animator anim;
         Player player;
 
-        float jumpInputStartTime;
-        float dashInputStartTime;
-
-        float primAtkInputStartTime;
-        float primChargingStartTime;
-        bool holdingPrimAtkInput;
-
-        float secAtkInputStartTime;
-        float secChargingStartTime;
-        bool holdingSecAtkInput;
+        private bool holdingPrimAtkInput;
+        private float jumpInputStartTime;
+        private float dashInputStartTime;
+        private float primAtkInputStartTime;
+        private float chargingStartTime;
+        private float chargedAtkStartTime;
 
         private void Start()
         {
@@ -52,8 +45,7 @@ namespace DeaLoux.Player
             JumpInputHoldTime();
             DashInputHoldTime();
             PrimAtkInputHoldTime();
-            SecAtkInputHoldTime();
-            //SecAtkInputHoldTime();
+            ChargedAtkReleaseWindow();
             LookDirCheck();
         }
 
@@ -109,19 +101,18 @@ namespace DeaLoux.Player
 
             if (context.started)
             {
-                SwitchSlot(data.slot1);
-                primAtkInputStartTime = Time.time;
                 PrimAtkInput = true;
             }
 
             else if (context.performed)
-                primChargingStartTime = Time.time;
+                chargingStartTime = Time.time;
 
             else if (context.canceled)
             {
-                if (holdingPrimAtkInput && Time.time > primChargingStartTime + data.minChargeTime)
+                if (holdingPrimAtkInput && Time.time > chargingStartTime + data.minChargeTime)
                 {
-                    PrimAtkCharged = true;
+                    chargedAtkStartTime = Time.time;
+                    AtkCharged = true;
                 }
 
                 PrimAtkInput = false;
@@ -129,35 +120,24 @@ namespace DeaLoux.Player
 
 
             holdingPrimAtkInput = context.performed;
-            primChargingFX.SetActive(holdingPrimAtkInput);
+            chargingFX.SetActive(holdingPrimAtkInput);
         }
 
-        public void OnSecAtkInput(InputAction.CallbackContext context)
-        {
-            //Debug.Log(context);
 
-            if (context.started)
+        public void OnAtkToggleInput(InputAction.CallbackContext context)
+        {
+            //AtkToggleInput = context.performed;
+            if (context.performed)
             {
                 SwitchSlot(data.slot2);
-                secAtkInputStartTime = Time.time;
-                SecAtkInput = true;
+                AtkToggleInput = true;
             }
-
-            else if (context.performed)
-                secChargingStartTime = Time.time;
-
-            else if (context.canceled)
+            else
             {
-                if (holdingSecAtkInput && Time.time > secChargingStartTime + data.minChargeTime)
-                {
-                    SecAtkCharged = true;
-                }
-
-                SecAtkInput = false;
+                SwitchSlot(data.slot1);
+                AtkToggleInput = false;
             }
-
-            holdingSecAtkInput = context.performed;
-            secChargingFX.SetActive(holdingSecAtkInput);
+            anim.SetBool("toggleAtk", AtkToggleInput);
         }
 
         public void OnMenuInput(InputAction.CallbackContext context)
@@ -172,13 +152,10 @@ namespace DeaLoux.Player
 
         public void TickJumpInput() => JumpInput = false;
         public void TickDashInput() => DashInput = false;
+        public void TickPrimAtkInput() => PrimAtkInput = false;
+        public void TickPrimAtkCharged() => AtkCharged = false;
         public void TickMenuInput() => MenuInput = false;
         public void TickCycleInput() => CycleInput = false;
-
-        public void TickPrimAtkInput() => PrimAtkInput = false;
-        public void TickSecAtkInput() => SecAtkInput = false;
-        public void TickPrimAtkCharged() => PrimAtkCharged = false;
-        public void TickSecAtkCharged() => SecAtkCharged = false;
 
         void SwitchSlot(Data.EquipmentBase slot)
         {
@@ -188,7 +165,7 @@ namespace DeaLoux.Player
             player.ChargedAttackDelegate += slot.DoChargedAttack;
         }
 
-        void JumpInputHoldTime()
+        private void JumpInputHoldTime()
         {
             if (Time.time >= jumpInputStartTime + data.inputHoldTime)
             {
@@ -196,7 +173,7 @@ namespace DeaLoux.Player
             }
         }
 
-        void DashInputHoldTime()
+        private void DashInputHoldTime()
         {
             if (Time.time >= dashInputStartTime + data.inputHoldTime)
             {
@@ -204,7 +181,7 @@ namespace DeaLoux.Player
             }
         }
 
-        void PrimAtkInputHoldTime()
+        private void PrimAtkInputHoldTime()
         {
             if (Time.time >= primAtkInputStartTime + data.inputHoldTime)
             {
@@ -212,15 +189,15 @@ namespace DeaLoux.Player
             }
         }
 
-        void SecAtkInputHoldTime()
+        private void ChargedAtkReleaseWindow()
         {
-            if (Time.time >= secAtkInputStartTime + data.inputHoldTime)
+            if (Time.time >= chargedAtkStartTime + data.inputHoldTime)
             {
-                SecAtkInput = false;
+                AtkCharged = false;
             }
         }
 
-        void SetLookDir(Vector2 v)
+        private void SetLookDir(Vector2 v)
         {
             data.LookDir = v;
             data.LookAngle = Vector2.SignedAngle(Vector2.right, data.LookDir);
@@ -237,30 +214,10 @@ namespace DeaLoux.Player
             anim.SetInteger("lookAngle", lookAngle);
         }
 
-        void LookDirCheck()
+        private void LookDirCheck()
         {
             if (RawMovementInput == Vector2.zero)
                 SetLookDir(new Vector2(data.FacingDir, 0));
         }
-
-        #region DEPRECIATED
-        /*
-        public bool AtkToggleInput { get; private set; }
-        public void OnAtkToggleInput(InputAction.CallbackContext context)
-        {
-            AtkToggleInput = context.performed;
-            if (context.performed)
-            {
-                SwitchSlot(data.slot2);
-                AtkToggleInput = true;
-            }
-            else
-            {
-                SwitchSlot(data.slot1);
-                AtkToggleInput = false;
-            }
-            anim.SetBool("toggleAtk", AtkToggleInput);
-        }*/
-        #endregion
     }
 }

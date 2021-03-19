@@ -25,6 +25,7 @@ namespace DeaLoux.Player
         {
             base.LogicUpdate();
 
+            _primAtkInput = _player.InputHandler.PrimAtkInput;
             if (_xInput != 0)
             {
                 ChangeStateSH(_player.MoveState);

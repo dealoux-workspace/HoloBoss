@@ -14,10 +14,7 @@ namespace DeaLoux.Player
         public override void Enter()
         {
             base.Enter();
-            if(_primAtkInput)
-                _player.InputHandler.TickPrimAtkInput();
-            if(_secAtkInput)
-                _player.InputHandler.TickSecAtkInput();
+            _player.InputHandler.TickPrimAtkInput();
         }
 
         public override void LogicUpdate()

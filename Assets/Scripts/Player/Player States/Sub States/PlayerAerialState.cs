@@ -31,6 +31,12 @@ namespace DeaLoux.Player
                 CheckWallLeapCoyoteTime();
 
                 _player.Anim.SetFloat("yVelocity", _player.PlayerController.velocity.y);
+                _grounded = _player.Grounded();
+                _wallTouched = _player.WallTouched();
+                _xInput = _player.InputHandler.NormInputX;
+                _jumpInput = _player.InputHandler.JumpInput;
+                _dashInput = _player.InputHandler.DashInput;
+                _primAtkInput = _player.InputHandler.PrimAtkInput;
 
                 JumpingCheck();
 
@@ -53,61 +59,32 @@ namespace DeaLoux.Player
                     else if (_player.JumpState.CanJump())
                         ChangeStateSH(_player.JumpState);
                 }
+                else if (_primAtkInput && !_wallTouched)
+                {
+                    switch (_atkToggled ? _playerData.slot2.type : _playerData.slot1.type)
+                    {
+                        case EquipmentType.FOUR_WAY:
+                            ChangeStateSH(_player.AtkAerial4State);
+                            break;
+                        case EquipmentType.EIGHT_WAY:
+                            ChangeStateSH(_player.AtkAerial8State);
+                            break;
+                    }
+                }
                 else if (_wallTouched && _xInput == _playerData.FacingDir && _player.PlayerController.velocity.y < 0)
                 {
                     ChangeStateSH(_player.WallSlideState);
                 }
-                else if (_primAtkInput && !_wallTouched)
+                else if (_player.InputHandler.AtkCharged)
                 {
-                    switch (_playerData.slot1.type)
+                    switch (_atkToggled ? _playerData.slot2.Ctype : _playerData.slot1.Ctype)
                     {
                         case EquipmentType.FOUR_WAY:
-                            ChangeStateSH(_player.PrimAtkAerial4State);
-                            break;
-                        case EquipmentType.EIGHT_WAY:
-                            ChangeStateSH(_player.PrimAtkAerial8State);
-                            break;
-                    }
-                }
-
-                else if (_secAtkInput && !_wallTouched)
-                {
-                    switch (_playerData.slot2.type)
-                    {
-                        case EquipmentType.FOUR_WAY:
-                            ChangeStateSH(_player.SecAtkAerial4State);
-                            break;
-                        case EquipmentType.EIGHT_WAY:
-                            ChangeStateSH(_player.SecAtkAerial8State);
-                            break;
-                    }
-                }
-
-                else if (_primAtkCharged)
-                {
-                    switch (_playerData.slot1.Ctype)
-                    {
-                        case EquipmentType.FOUR_WAY:
-                            _player.AtkChargedState.SetAnim("primAtkAerial4Charged");
+                            _player.AtkChargedState.SetAnim("atkAerial4Charged");
                             break;
 
                         case EquipmentType.EIGHT_WAY:
-                            _player.AtkChargedState.SetAnim("primAtkAerial8Charged");
-                            break;
-                    }
-                    ChangeStateSH(_player.AtkChargedState, true);
-                }
-
-                else if (_secAtkCharged)
-                {
-                    switch (_playerData.slot2.Ctype)
-                    {
-                        case EquipmentType.FOUR_WAY:
-                            _player.AtkChargedState.SetAnim("secAtkAerial4Charged");
-                            break;
-
-                        case EquipmentType.EIGHT_WAY:
-                            _player.AtkChargedState.SetAnim("secAtkAerial8Charged");
+                            _player.AtkChargedState.SetAnim("atkAerial8Charged");
                             break;
                     }
                     ChangeStateSH(_player.AtkChargedState, true);

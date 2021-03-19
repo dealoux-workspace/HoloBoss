@@ -20,7 +20,7 @@ namespace DeaLoux.CoreSystems.Patterns
             CurrState.Enter();
         }
 
-        public virtual void ChangeState(T newState, bool savePrevious = false)
+        public void ChangeState(T newState, bool savePrevious = false)
         {
             CurrState.Exit();
             if (!savePrevious)

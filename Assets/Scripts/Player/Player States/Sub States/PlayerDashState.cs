@@ -35,17 +35,15 @@ namespace DeaLoux.Player
                 _player.MoveHorizontally(_playerData.dashVelocity * _playerData.FacingDir);
                 ShouldPlaceAfterImage();
 
+                _primAtkInput = _player.InputHandler.PrimAtkInput;
+
                 if (_jumpInput && _player.JumpState.CanJump())
                 {
                     ChangeStateSH(_player.JumpState);
                 }
-                else if (_primAtkInput)
+                else if (_primAtkInput && !(_stateMachine.CurrState is PlayerAtkDashState))
                 {
-                    ChangeStateSH(_player.PrimAtkDashState);
-                }
-                else if (_secAtkInput)
-                {
-                    ChangeStateSH(_player.SecAtkDashState);
+                    ChangeStateSH(_player.AtkDashState);
                 }
 
                 if (Time.time >= _startTime + _playerData.dashTime || !_grounded)

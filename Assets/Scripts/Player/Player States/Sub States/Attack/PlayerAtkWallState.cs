@@ -14,10 +14,6 @@ namespace DeaLoux.Player
         public override void Enter()
         {
             base.Enter();
-            if (_primAtkInput)
-                _player.InputHandler.TickPrimAtkInput();
-            if (_secAtkInput)
-                _player.InputHandler.TickSecAtkInput();
         }
 
         public override void LogicUpdate()
@@ -26,6 +22,8 @@ namespace DeaLoux.Player
 
             if (_animFinished)
             {
+                _player.InputHandler.TickPrimAtkInput();
+
                 ChangeStateSH(_player.WallSlideState);
             }
         }
