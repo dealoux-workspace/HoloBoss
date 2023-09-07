@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Events;
 using System.Collections.Generic;
-
+using DeaLoux.CoreSystems.Audio;
 
 namespace DeaLoux.CoreSystems.ScriptableObjects
 {
@@ -10,20 +10,21 @@ namespace DeaLoux.CoreSystems.ScriptableObjects
     /// Event on which <c>AudioCue</c> components send a message to play SFX and music. <c>AudioManager</c> listens on these events, and actually plays the sound.
     /// </summary>
     [CreateAssetMenu(menuName = "Events/AudioCue Event Channel")]
-	public class AudioCueEventChannelSO : EventChannelBaseSO
+	public class AudioCueEventChannelSO : DescriptionBaseSO
 	{
 		public AudioCuePlayAction OnAudioCuePlayRequested;
 		public AudioCueStopAction OnAudioCueStopRequested;
 		public AudioCueFinishAction OnAudioCueFinishRequested;
 
-		public AudioCueKey RaisePlayEvent(AudioCueSO audioCue, AudioConfigurationSO audioConfiguration, Vector3 positionInSpace = default)
+		public AudioCueKey RaisePlayEvent(AudioCueSO audioCue, AudioConfigurationSO audioConfiguration, int index = 0, bool fadeIn = false, Vector3 positionInSpace = default)
 		{
 			AudioCueKey audioCueKey = AudioCueKey.Invalid;
 
 			if (OnAudioCuePlayRequested != null)
 			{
-				audioCueKey = OnAudioCuePlayRequested.Invoke(audioCue, audioConfiguration, positionInSpace);
+				audioCueKey = OnAudioCuePlayRequested.Invoke(audioCue, audioConfiguration, index, fadeIn, positionInSpace);
 			}
+
 			else
 			{
 				Debug.LogWarning("An AudioCue play event was requested, but nobody picked it up. " +
@@ -71,7 +72,7 @@ namespace DeaLoux.CoreSystems.ScriptableObjects
 		}
 	}
 
-	public delegate AudioCueKey AudioCuePlayAction(AudioCueSO audioCue, AudioConfigurationSO audioConfiguration, Vector3 positionInSpace);
+	public delegate AudioCueKey AudioCuePlayAction(AudioCueSO audioCue, AudioConfigurationSO audioConfiguration, int index, bool fadeIn, Vector3 positionInSpace);
 	public delegate bool AudioCueStopAction(AudioCueKey emitterKey);
 	public delegate bool AudioCueFinishAction(AudioCueKey emitterKey);
 }

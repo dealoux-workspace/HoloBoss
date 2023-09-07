@@ -1,22 +1,21 @@
-﻿using Data;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public class PlayerDashState : PlayerBasicActionState
     {
         public bool Dashable { get; private set; }
+        Vector2 lastAIPos;
 
-        public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) { }
-        private Vector2 lastAIPos;
+        public PlayerDashState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName) { }
 
         public override void Enter()
         {
             base.Enter();
             Dashable = false;
-            _playerData.dashJumpMultiplier = 1.24f;
+            _data.dashJumpMultiplier = 1.24f;
         }
 
         public override void Exit()
@@ -32,11 +31,12 @@ namespace DeaLoux.Player
             {
                 _player.ShouldFlip(_xInput);
                 PlaceAfterImage();
-                _player.MoveHorizontally(_playerData.dashVelocity * _playerData.FacingDir);
+                _player.MoveHorizontally(_data.dashVelocity * _data.facingDir);
                 ShouldPlaceAfterImage();
 
                 if (_jumpInput && _player.JumpState.CanJump())
                 {
+                    _player.AerialState.DashedLastFrame();
                     ChangeStateSH(_player.JumpState);
                 }
                 else if (_primAtkInput && !(_stateMachine.CurrState is PlayerAtkDashState))
@@ -48,7 +48,7 @@ namespace DeaLoux.Player
                     ChangeStateSH(_player.SecAtkDashState);
                 }
 
-                if (Time.time >= _startTime + _playerData.dashTime || !_grounded)
+                if (Time.time >= _startTime + _data.dashTime || !_grounded)
                 {
                     isActionDone = true;
                     _player.InputHandler.TickDashInput();
@@ -56,15 +56,10 @@ namespace DeaLoux.Player
             }
         }
 
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
-        }
-
         public bool ResetDash() => Dashable = true;
         public void ShouldPlaceAfterImage()
         {
-            if (Vector2.Distance(_player.transform.position, lastAIPos) >= _playerData.afterImageDistance)
+            if (Vector2.Distance(_player.transform.position, lastAIPos) >= _data.afterImageDistance)
             {
                 PlaceAfterImage();
             }

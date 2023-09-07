@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f45ddabd6fe7d43959038c8846e745, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  specificAnimations:
+  - {fileID: 11400000, guid: 08a226e9055bb7e429f33a7b9d453c63, type: 2}
+  - {fileID: 11400000, guid: 3b078c41ca4b37e469691072e49d1afc, type: 2}
+  - {fileID: 11400000, guid: a67c24caa172d6345addeae4ed62c03d, type: 2}
+  - {fileID: 11400000, guid: 98157eccbae086042920c39ab2d9d4a0, type: 2}
+  - {fileID: 11400000, guid: c9333ba2c3794924b83de7c732c0a873, type: 2}
+  - {fileID: 11400000, guid: ecac041c19058cc419921bf520b7f6f1, type: 2}
+  - {fileID: 11400000, guid: 6d9cb1acbf5d0ca4db6de6c79f9fdcb0, type: 2}
+  - {fileID: 11400000, guid: 5a6c6a3260480614d982c97b6107a06c, type: 2}
+  - {fileID: 11400000, guid: 4aa8f307091476143857e14c6739a067, type: 2}
+  - {fileID: 11400000, guid: d6c9371520c19a94b9c9baa382368bbd, type: 2}
+  - {fileID: 11400000, guid: d37fe892885ac814d86e925a0394b653, type: 2}
+  - {fileID: 11400000, guid: e77dbd31be1c80b4bb4cf51aac7aab1d, type: 2}
+  - {fileID: 11400000, guid: 4310fa2eed2392540a09cf30e8efe6f1, type: 2}
+  type: 1
+  typeRange: 0
+  Ctype: 1
+  CtypeRange: 0
+  weaponOffset: 2
+  LightDamage: 5
+  HeavyDamage: 8
+  lightHBSize: {x: 1.8, y: 1.8, z: 0}
+  heavyHBSize: {x: 2, y: 2, z: 0}

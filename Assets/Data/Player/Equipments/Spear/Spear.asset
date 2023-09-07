@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c89e0787a1bf9478336569a76f33c4, type: 3}
+  m_Name: Spear
+  m_EditorClassIdentifier: Assembly-CSharp:Data:Equipment8DirRanged
+  specificAnimations:
+  - {fileID: 11400000, guid: 2b617646b67913c41a397e32b802275b, type: 2}
+  - {fileID: 11400000, guid: 8cf848dbdd4916d4993e2d7f94e58dad, type: 2}
+  - {fileID: 11400000, guid: 5c3cab582164a4e45b775b96ea66b3a1, type: 2}
+  - {fileID: 11400000, guid: ec69bb873dbb02d4b818a7d560b8cfb7, type: 2}
+  - {fileID: 11400000, guid: 473c1cd0903942345aaf8bcc84deba0e, type: 2}
+  - {fileID: 11400000, guid: 4ef924d9ab2befb4494c1a4e254bda03, type: 2}
+  - {fileID: 11400000, guid: db7a96f4e194bfc4994f3be0feebe11d, type: 2}
+  - {fileID: 11400000, guid: ca7497d9373a45e40a82ff66d5f2f0d1, type: 2}
+  - {fileID: 11400000, guid: 901228854e20fbd42bd8ce1bc9f9c156, type: 2}
+  - {fileID: 11400000, guid: 58184863237e0b64982c66383c0ecf95, type: 2}
+  - {fileID: 11400000, guid: 3c8f953a763425f4dab73146cda2f299, type: 2}
+  - {fileID: 11400000, guid: bbd2b0719f8248941a821c51d3a33258, type: 2}
+  - {fileID: 11400000, guid: f55cac5322dadfe4b9761b257415420f, type: 2}
+  - {fileID: 11400000, guid: 46bbf49cf70de5a4ea5f38827b9d4c51, type: 2}
+  - {fileID: 11400000, guid: 020020afd1be2ed448a40d3f00911a5e, type: 2}
+  - {fileID: 11400000, guid: 8b5f57a297a2ff144bdba8db28913ede, type: 2}
+  - {fileID: 11400000, guid: 71cc86fc4cd87f04092985106798bcc1, type: 2}
+  - {fileID: 11400000, guid: fbcd9175187ad2e4d91de845d954291d, type: 2}
+  - {fileID: 11400000, guid: f572807eb2abb4d478ff0f0302ba5e76, type: 2}
+  - {fileID: 11400000, guid: dc079365f2a18394f8dde2f603d459f8, type: 2}
+  - {fileID: 11400000, guid: 6a19d70839c71c74caade9ecab02a249, type: 2}
+  type: 0
+  typeRange: 1
+  Ctype: 0
+  CtypeRange: 1
+  weaponOffset: 2
+  poolSize: 5
+  HBSize: {x: 1.2, y: 1.2, z: 0}
+  lightPool: {fileID: 11400000, guid: bb9d72dacb5e21e49ae4e4e63be8f98a, type: 2}
+  heavyPool: {fileID: 11400000, guid: 9a4e9d4989bb0fa4eb263fd31e3c4c2a, type: 2}
+  lightFactory: {fileID: 11400000, guid: e082281457a81444aa2d2a5a9f9eb9ab, type: 2}
+  heavyFactory: {fileID: 11400000, guid: f0e4906139d9b674384457a58ae2fb88, type: 2}

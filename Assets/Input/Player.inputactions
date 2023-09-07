@@ -35,7 +35,7 @@
                     "id": "2fe792c4-e867-4fde-a30a-77246e128bac",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold"
+                    "interactions": "Hold(duration=0.8)"
                 },
                 {
                     "name": "Secondary Attack",
@@ -43,7 +43,7 @@
                     "id": "408e582c-bac3-43af-8b0e-d6236466a2ca",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold"
+                    "interactions": "Hold(duration=0.8)"
                 },
                 {
                     "name": "Menu",

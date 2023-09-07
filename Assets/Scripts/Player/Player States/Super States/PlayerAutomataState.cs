@@ -1,11 +1,11 @@
-﻿using Data;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public abstract class PlayerAutomataState : PlayerState
     {
-        public PlayerAutomataState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerAutomataState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName)
         {
         }
 
@@ -22,11 +22,6 @@ namespace DeaLoux.Player
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
         }
 
         public virtual void SetAnim(string name)

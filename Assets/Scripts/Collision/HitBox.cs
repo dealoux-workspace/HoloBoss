@@ -29,28 +29,17 @@ namespace DeaLoux.CoreSystems.Collision
             pos.Add(-135, -upDiag);
         }
 
-        public void HitBoxCheck(Vector3 position, Vector3 _boxSize, Quaternion rotation)
+        /*public Collider2D[] HitBoxCheck(Vector3 position, Vector3 _boxSize, Quaternion rotation)
         {
             boxSize = _boxSize;
-            //Debug.Log(boxSize);
-            Collider[] colliders = Physics.OverlapBox(position + new Vector3(_boxSize.x / 2, 0), _boxSize, rotation, hitMask);
-
-            if (colliders.Length > 0)
-            {
-                Debug.Log("We hit something");
-            }
+            return Physics2D.OverlapBoxAll(position + new Vector3(_boxSize.x / 2, 0), _boxSize, 0, hitMask);
         }
-
-        public void HitBoxCheck(Vector3 _boxSize)
+*/
+        public Collider2D[] HitBoxCheck(Vector3 _boxSize)
         {
             boxSize = _boxSize;
-            //Debug.Log(boxSize);
-            Collider[] colliders = Physics.OverlapBox(transform.position + new Vector3(_boxSize.x / 2, 0), _boxSize, transform.rotation, hitMask);
-
-            if (colliders.Length > 0)
-            {
-                Debug.Log("We hit something");
-            }
+            //return Physics2D.OverlapBoxAll(transform.position + new Vector3(_boxSize.x / 2, 0), _boxSize, 0, hitMask);
+            return Physics2D.OverlapBoxAll(transform.position, _boxSize, 0, hitMask);
         }
 
         void OnDrawGizmosSelected()
@@ -58,8 +47,8 @@ namespace DeaLoux.CoreSystems.Collision
             Gizmos.color = colour;
             Gizmos.matrix = transform.localToWorldMatrix;
             var pos = Vector3.zero;
-            pos.x += boxSize.x / 2;
-            Gizmos.DrawCube(pos, new Vector3(boxSize.x * 2, boxSize.y * 2, boxSize.z * 2));
+            //pos.x += boxSize.x / 2;
+            Gizmos.DrawCube(pos, new Vector3(boxSize.x, boxSize.y, boxSize.z));
         }
     }
 

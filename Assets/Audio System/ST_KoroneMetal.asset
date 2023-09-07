@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87f4335572dd834287e9d3b7ac0b802, type: 3}
+  m_Name: ST_KoroneMetal
+  m_EditorClassIdentifier: 
+  looping: 1
+  _audioClipGroups:
+  - sequenceMode: 2
+    audioClips:
+    - {fileID: 8300000, guid: 114cace6fe1a9c24ca83b87a035b3ebe, type: 3}
+    - {fileID: 8300000, guid: 07f01db0f58224641aae9999b692c7f9, type: 3}
+    - {fileID: 8300000, guid: ca2f796932fd98e419dc96db854feabe, type: 3}

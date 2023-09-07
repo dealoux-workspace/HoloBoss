@@ -1,26 +1,20 @@
-﻿using Data;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DeaLoux.AI
+namespace DeaLoux.Entity
 {
-    public class AI_IdleState : AI_State
+    public class AI_IdleState : AI_RestState
     {
-        public bool _idleTimeOver { get; protected set; }
         public bool _flipAfterIdle { get; protected set; }
-        public float _idleTime { get; protected set; }
 
-        public AI_IdleState(AI ai, AI_StateMachine stateMachine, AI_Data aiData, AI_SpecificData aiSData, string animBoolName) : base(ai, stateMachine, aiData, aiSData, animBoolName)
+        public AI_IdleState(AI ai, AI_StateMachine stateMachine, AI_Data baseData, EntityData data, string animBoolName) : base(ai, stateMachine, baseData, data, animBoolName)
         {
         }
 
         public override void Enter()
         {
             base.Enter();
-
-            _idleTimeOver = false;
-            SetRandomIdleTime();
         }
 
         public override void Exit()
@@ -29,6 +23,7 @@ namespace DeaLoux.AI
 
             if (_flipAfterIdle)
             {
+                _flipAfterIdle = false;
                 _ai.Flip();
             }
         }
@@ -36,28 +31,6 @@ namespace DeaLoux.AI
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-
-            if (Time.time >= _startTime + _idleTime)
-            {
-                _idleTimeOver = true;
-            }
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
-
-            _ai.SetVelocityX(0.0f);
-        }
-
-        public override void Tick()
-        {
-            base.Tick();
-        }
-
-        private void SetRandomIdleTime()
-        {
-            _idleTime = Random.Range(_aiSData.minIdleTime, _aiSData.maxIdleTime);
         }
 
         public void Flip() => _flipAfterIdle = true;

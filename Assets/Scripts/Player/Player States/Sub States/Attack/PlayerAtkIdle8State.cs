@@ -1,11 +1,10 @@
-﻿using Data;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public class PlayerAtkIdle8State : PlayerState
     {
-        public PlayerAtkIdle8State(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerAtkIdle8State(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName)
         {
         }
 
@@ -31,11 +30,6 @@ namespace DeaLoux.Player
             {
                 _stateMachine.ChangeToPreviousState(_player.IdleState);
             }
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
         }
     }
 }

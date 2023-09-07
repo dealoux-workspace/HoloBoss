@@ -14,7 +14,7 @@ namespace DeaLoux.CoreSystems.Patterns
         /// The factory which will be used to create <typeparamref name="T"/> on demand.
         /// </summary>
         public abstract IFactory<T> Factory { get; set; }
-        protected bool HasBeenPrewarmed { get; set; }
+        public bool HasBeenPrewarmed { get; protected set; }
 
         protected virtual T Create()
         {

@@ -1,17 +1,18 @@
-﻿using Data;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public class PlayerAerialState : PlayerState
     {
-        private bool jumping;
-        private bool coyote;
-        private bool wallLeapCoyote;
-        private float wallLeapCoyoteStartTime;
-        private bool wallTouchedLastFrame;
+        bool jumping;
+        bool coyote;
+        bool wallLeapCoyote;
+        float wallLeapCoyoteStartTime;
+        bool wallTouchedLastFrame;
+        bool dashedLastFrame;
 
-        public PlayerAerialState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) { }
+        public PlayerAerialState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName) { }
 
         public override void Enter()
         {
@@ -19,6 +20,7 @@ namespace DeaLoux.Player
 
             coyote = true;
             wallTouchedLastFrame = _wallTouched;
+            _data.dashJumpMultiplier = dashedLastFrame ? 1.24f : 1f;
         }
 
         public override void LogicUpdate()
@@ -30,36 +32,42 @@ namespace DeaLoux.Player
                 CheckCoyoteTime();
                 CheckWallLeapCoyoteTime();
 
-                _player.Anim.SetFloat("yVelocity", _player.PlayerController.velocity.y);
+                _player.Anim.SetFloat("yVelocity", _player.Controller.velocity.y);
 
                 JumpingCheck();
 
                 _player.ShouldFlip(_xInput);
-                _player.MoveHorizontally(_playerData.movementSpeed * _playerData.dashJumpMultiplier * _xInput);
+                _player.MoveHorizontally(_data.movementSpeed * _data.dashJumpMultiplier * _xInput);
 
-                if (_grounded && _player.PlayerController.velocity.y < 0.01f)
+                if (_grounded && _player.Controller.velocity.y < 0.01f)
                 {
                     ChangeStateSH(_player.LandingState);
                 }
                 else if (_jumpInput && !jumping)
                 {
                     if (_wallTouched && _player.WallJumpState.CoolDownDone())
+                    {
+                        if (_xInput != 0 && _xInput != _data.facingDir)
+                            _player.WallJumpState.Leap();
                         ChangeStateSH(_player.WallJumpState);
-                    else if (!_wallTouched && wallTouchedLastFrame && wallLeapCoyote && _player.WallLeapState.CoolDownDone())
+                    }
+
+                    else if (!_wallTouched && wallTouchedLastFrame && wallLeapCoyote && _player.WallJumpState.CoolDownDone())
                     {
                         wallLeapCoyote = false;
-                        ChangeStateSH(_player.WallLeapState);
+                        _player.WallJumpState.Leap();
+                        ChangeStateSH(_player.WallJumpState);
                     }
                     else if (_player.JumpState.CanJump())
                         ChangeStateSH(_player.JumpState);
                 }
-                else if (_wallTouched && _xInput == _playerData.FacingDir && _player.PlayerController.velocity.y < 0)
+                else if (_wallTouched && _xInput == _data.facingDir && _player.Controller.velocity.y < 0)
                 {
                     ChangeStateSH(_player.WallSlideState);
                 }
                 else if (_primAtkInput && !_wallTouched)
                 {
-                    switch (_playerData.slot1.type)
+                    switch (_data.slot1.type)
                     {
                         case EquipmentType.FOUR_WAY:
                             ChangeStateSH(_player.PrimAtkAerial4State);
@@ -72,7 +80,7 @@ namespace DeaLoux.Player
 
                 else if (_secAtkInput && !_wallTouched)
                 {
-                    switch (_playerData.slot2.type)
+                    switch (_data.slot2.type)
                     {
                         case EquipmentType.FOUR_WAY:
                             ChangeStateSH(_player.SecAtkAerial4State);
@@ -85,7 +93,7 @@ namespace DeaLoux.Player
 
                 else if (_primAtkCharged)
                 {
-                    switch (_playerData.slot1.Ctype)
+                    switch (_data.slot1.Ctype)
                     {
                         case EquipmentType.FOUR_WAY:
                             _player.AtkChargedState.SetAnim("primAtkAerial4Charged");
@@ -100,7 +108,7 @@ namespace DeaLoux.Player
 
                 else if (_secAtkCharged)
                 {
-                    switch (_playerData.slot2.Ctype)
+                    switch (_data.slot2.Ctype)
                     {
                         case EquipmentType.FOUR_WAY:
                             _player.AtkChargedState.SetAnim("secAtkAerial4Charged");
@@ -115,38 +123,30 @@ namespace DeaLoux.Player
             }
         }
 
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
-        }
-
         public override void Exit()
         {
             base.Exit();
 
-            if (_dashInput)
-                _player.InputHandler.TickDashInput();
-
-            _playerData.dashJumpMultiplier = 1f;
+            dashedLastFrame = false;
         }
 
-        private void JumpingCheck()
+        void JumpingCheck()
         {
             if (jumping)
             {
-                if (_dashInput && _xInput != 0)
+                if (dashedLastFrame)
                 {
                     _player.DashState.ShouldPlaceAfterImage();
                 }
 
-                else if (_player.PlayerController.velocity.y <= 0.0f)
+                else if (_player.Controller.velocity.y <= 0.0f)
                 {
                     jumping = false;
                 }
             }
         }
 
-        private void CheckCoyoteTime()
+        void CheckCoyoteTime()
         {
             if (coyote && Time.time > _startTime + _playerData.coyoteTime)
             {
@@ -155,7 +155,7 @@ namespace DeaLoux.Player
             }
         }
 
-        private void CheckWallLeapCoyoteTime()
+        void CheckWallLeapCoyoteTime()
         {
             if (wallLeapCoyote && Time.time > wallLeapCoyoteStartTime + _playerData.coyoteTime)
             {
@@ -169,6 +169,8 @@ namespace DeaLoux.Player
             wallLeapCoyoteStartTime = Time.time;
         }
 
-        public void SetJumpingStatus() => jumping = true;
+        public void DashedLastFrame() => dashedLastFrame = true;
+
+        public void Jumping() => jumping = true;
     }
 }

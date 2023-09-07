@@ -8,7 +8,7 @@ namespace DeaLoux.CoreSystems.ScriptableObjects
     /// </summary>
 
     [CreateAssetMenu(menuName = "Events/Void Event Channel")]
-    public class VoidEventChannelSO : EventChannelBaseSO
+    public class VoidEventChannelSO : DescriptionBaseSO
     {
         public UnityAction OnEventRaised;
 

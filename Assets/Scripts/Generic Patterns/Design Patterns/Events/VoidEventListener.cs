@@ -4,7 +4,6 @@ using UnityEngine.Events;
 
 namespace DeaLoux.CoreSystems.Patterns
 {
-
     /// <summary>
     /// A flexible handler for void events in the form of a MonoBehaviour. Responses can be connected directly from the Unity Inspector.
     /// </summary>

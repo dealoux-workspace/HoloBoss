@@ -1,13 +1,12 @@
-﻿using Data;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public class PlayerWallSlideState : PlayerState
     {
-        public PlayerWallSlideState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerWallSlideState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName)
         {
         }
 
@@ -17,25 +16,21 @@ namespace DeaLoux.Player
 
             if (!_exitingState)
             {
-                _player.MoveVertically(-_playerData.wallSlideVelocity);
+                _player.MoveVertically(-_data.wallSlideVelocity);
 
                 if (_grounded)
                 {
                     ChangeStateSH(_player.IdleState);
                 }
-                else if (_jumpInput && _xInput == _playerData.FacingDir && _player.WallJumpState.CoolDownDone())
-                {
-                    ChangeStateSH(_player.WallJumpState);
-                }
-                else if (_jumpInput && _xInput != _playerData.FacingDir && _player.WallLeapState.CoolDownDone())
-                {
-                    ChangeStateSH(_player.WallLeapState);
-                }
-                else if (!_wallTouched || _xInput != _playerData.FacingDir)
+                else if (!_wallTouched || _xInput != _data.facingDir)
                 {
                     _player.Flip();
                     _player.AerialState.StartWallLeapCoyoteTime();
                     ChangeStateSH(_player.AerialState);
+                }
+                else if (_jumpInput && _player.WallJumpState.CoolDownDone())
+                {
+                    ChangeStateSH(_player.WallJumpState);
                 }
                 else if (_primAtkInput)
                 {
@@ -57,5 +52,11 @@ namespace DeaLoux.Player
                 }
             }
         }
+
+        /*public override void Exit()
+        {
+            base.Exit();
+            _player.Flip();
+        }*/
     }
 }

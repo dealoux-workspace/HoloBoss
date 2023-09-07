@@ -1,13 +1,12 @@
-﻿using Data;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public abstract class PlayerGroundedState : PlayerState
     {
-        public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName)
         {
         }
 
@@ -17,6 +16,7 @@ namespace DeaLoux.Player
 
             _player.JumpState.ResetAmount();
             _player.DashState.ResetDash();
+            _player.InputHandler.TickDashInput();
         }
 
         public override void Exit()
@@ -44,7 +44,7 @@ namespace DeaLoux.Player
                 }
                 else if (_primAtkInput)
                 {
-                    switch (_playerData.slot1.type)
+                    switch (_data.slot1.type)
                     {
                         case EquipmentType.FOUR_WAY:
                             if (_stateMachine.CurrState is PlayerMoveState)
@@ -62,7 +62,7 @@ namespace DeaLoux.Player
                 }
                 else if (_primAtkCharged)
                 {
-                    switch (_playerData.slot1.Ctype)
+                    switch (_data.slot1.Ctype)
                     {
                         case EquipmentType.FOUR_WAY:
                             _player.AtkChargedState.SetAnim("primAtkIdle4Charged");
@@ -77,7 +77,7 @@ namespace DeaLoux.Player
 
                 else if (_secAtkInput)
                 {
-                    switch (_playerData.slot2.type)
+                    switch (_data.slot2.type)
                     {
                         case EquipmentType.FOUR_WAY:
                             if (_stateMachine.CurrState is PlayerMoveState)
@@ -96,7 +96,7 @@ namespace DeaLoux.Player
                 }
                 else if (_secAtkCharged)
                 {
-                    switch (_playerData.slot2.Ctype)
+                    switch (_data.slot2.Ctype)
                     {
                         case EquipmentType.FOUR_WAY:
                             _player.AtkChargedState.SetAnim("secAtkIdle4Charged");
@@ -109,11 +109,6 @@ namespace DeaLoux.Player
                     ChangeStateSH(_player.AtkChargedState, true);
                 }
             }
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
         }
     }
 }

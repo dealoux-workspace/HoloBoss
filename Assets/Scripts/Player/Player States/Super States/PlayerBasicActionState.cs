@@ -1,15 +1,14 @@
-﻿using Data;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public abstract class PlayerBasicActionState : PlayerState
     {
         protected bool isActionDone;
 
-        public PlayerBasicActionState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) { }
+        public PlayerBasicActionState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName) { }
 
         public override void Enter()
         {
@@ -29,7 +28,7 @@ namespace DeaLoux.Player
 
             if (isActionDone)
             {
-                if (_grounded && _player.PlayerController.velocity.y < 0.01f)
+                if (_grounded && _player.Controller.velocity.y < 0.01f)
                 {
                     ChangeStateSH(_player.IdleState);
                 }
@@ -39,11 +38,6 @@ namespace DeaLoux.Player
                     ChangeStateSH(_player.AerialState);
                 }
             }
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
         }
     }
 }

@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using DeaLoux.Equipment;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public class PlayerInputHandler : MonoBehaviour
     {
@@ -12,7 +13,6 @@ namespace DeaLoux.Player
         public int NormInputX { get; private set; }
         public int NormInputY { get; private set; }
         public bool JumpInput { get; private set; }
-        public bool JumpInputTap { get; private set; }
         public bool DashInput { get; private set; }
         public bool PrimAtkInput { get; private set; }
         public bool SecAtkInput { get; private set; }
@@ -22,7 +22,9 @@ namespace DeaLoux.Player
         public bool CycleInput { get; private set; }
 
         [SerializeField]
-        Data.PlayerData data;
+        EntityData data;
+        [SerializeField]
+        PlayerData playerData;
         [SerializeField]
         GameObject primChargingFX;
         [SerializeField]
@@ -31,7 +33,6 @@ namespace DeaLoux.Player
         Player player;
 
         float jumpInputStartTime;
-        float dashInputStartTime;
 
         float primAtkInputStartTime;
         float primChargingStartTime;
@@ -50,7 +51,6 @@ namespace DeaLoux.Player
         private void Update()
         {
             JumpInputHoldTime();
-            DashInputHoldTime();
             PrimAtkInputHoldTime();
             SecAtkInputHoldTime();
             //SecAtkInputHoldTime();
@@ -62,46 +62,27 @@ namespace DeaLoux.Player
             RawMovementInput = context.ReadValue<Vector2>();
             SetLookDir(Vector2Int.RoundToInt(RawMovementInput.normalized));
 
-            NormInputX = Mathf.Abs(RawMovementInput.x) > .5f ? (int)(RawMovementInput * Vector2.right).normalized.x : 0;
-            NormInputY = Mathf.Abs(RawMovementInput.y) > .5f ? (int)(RawMovementInput * Vector2.up).normalized.y : 0;
+            NormInputX = Mathf.RoundToInt(RawMovementInput.x);
+            NormInputY = Mathf.RoundToInt(RawMovementInput.y);
             //Debug.Log(RawMovementInput);
         }
 
         public void OnJumpInput(InputAction.CallbackContext context)
         {
-            jumpInputStartTime = Time.time;
-
-            if (context.interaction is TapInteraction)
+            if (context.started)
             {
-                if (context.started)
-                {
-                    JumpInput = true;
-                    JumpInputTap = true;
-                }
-
-                if (context.canceled)
-                {
-                    JumpInputTap = false;
-                }
+                JumpInput = true;
+                jumpInputStartTime = Time.time;
             }
-            else
+            else if (context.canceled)
             {
-                JumpInput = context.performed;
+                JumpInput = false;
             }
-
-            //Debug.Log(context.interaction);
         }
 
         public void OnDashInput(InputAction.CallbackContext context)
         {
-            if (context.started)
-            {
-                dashInputStartTime = Time.time;
-                DashInput = true;
-            }
-            else if (context.canceled)
-                DashInput = false;
-
+            DashInput = !context.canceled;
         }
         public void OnPrimAtkInput(InputAction.CallbackContext context)
         {
@@ -109,6 +90,7 @@ namespace DeaLoux.Player
 
             if (context.started)
             {
+                SwitchSlot(data.slot1);
                 primAtkInputStartTime = Time.time;
                 PrimAtkInput = true;
             }
@@ -118,14 +100,13 @@ namespace DeaLoux.Player
 
             else if (context.canceled)
             {
-                if (holdingPrimAtkInput && Time.time > primChargingStartTime + data.minChargeTime)
+                if (holdingPrimAtkInput && Time.time > primChargingStartTime + playerData.minChargeTime)
                 {
                     PrimAtkCharged = true;
                 }
 
                 PrimAtkInput = false;
             }
-
 
             holdingPrimAtkInput = context.performed;
             primChargingFX.SetActive(holdingPrimAtkInput);
@@ -137,6 +118,7 @@ namespace DeaLoux.Player
 
             if (context.started)
             {
+                SwitchSlot(data.slot2);
                 secAtkInputStartTime = Time.time;
                 SecAtkInput = true;
             }
@@ -146,7 +128,7 @@ namespace DeaLoux.Player
 
             else if (context.canceled)
             {
-                if (holdingSecAtkInput && Time.time > secChargingStartTime + data.minChargeTime)
+                if (holdingSecAtkInput && Time.time > secChargingStartTime + playerData.minChargeTime)
                 {
                     SecAtkCharged = true;
                 }
@@ -178,43 +160,34 @@ namespace DeaLoux.Player
         public void TickPrimAtkCharged() => PrimAtkCharged = false;
         public void TickSecAtkCharged() => SecAtkCharged = false;
 
-        void SwitchSlot(Data.EquipmentBase slot)
+        void SwitchSlot(EquipmentBase slot)
         {
-            player.ResetAttackDelegate();
+            player.ResetAttackDelegates();
             player.AttackDelegate += slot.DoAttack;
-            player.ResetChargedAttackDelegate();
-            player.ChargedAttackDelegate += slot.DoChargedAttack;
+            player.HeavyAttackDelegate += slot.DoHeavyAttack;
         }
 
         void JumpInputHoldTime()
         {
-            if (Time.time >= jumpInputStartTime + data.inputHoldTime)
+            if (Time.time >= jumpInputStartTime + playerData.inputHoldTime)
             {
-                JumpInput = false;
-            }
-        }
-
-        void DashInputHoldTime()
-        {
-            if (Time.time >= dashInputStartTime + data.inputHoldTime)
-            {
-                DashInput = false;
+                TickJumpInput();
             }
         }
 
         void PrimAtkInputHoldTime()
         {
-            if (Time.time >= primAtkInputStartTime + data.inputHoldTime)
+            if (Time.time >= primAtkInputStartTime + playerData.inputHoldTime)
             {
-                PrimAtkInput = false;
+                TickPrimAtkInput();
             }
         }
 
         void SecAtkInputHoldTime()
         {
-            if (Time.time >= secAtkInputStartTime + data.inputHoldTime)
+            if (Time.time >= secAtkInputStartTime + playerData.inputHoldTime)
             {
-                SecAtkInput = false;
+                TickSecAtkInput();
             }
         }
 
@@ -238,7 +211,7 @@ namespace DeaLoux.Player
         void LookDirCheck()
         {
             if (RawMovementInput == Vector2.zero)
-                SetLookDir(new Vector2(data.FacingDir, 0));
+                SetLookDir(new Vector2(data.facingDir, 0));
         }
 
         #region DEPRECIATED

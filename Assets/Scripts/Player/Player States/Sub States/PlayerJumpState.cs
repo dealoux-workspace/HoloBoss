@@ -1,17 +1,16 @@
-﻿using Data;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public class PlayerJumpState : PlayerBasicActionState
     {
-        private int amountLeft;
+        int amountLeft;
 
-        public PlayerJumpState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerJumpState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName)
         {
-            amountLeft = _playerData.amountOfJumps;
+            amountLeft = _data.amountOfJumps;
         }
 
         public override void Enter()
@@ -28,20 +27,15 @@ namespace DeaLoux.Player
         {
             base.LogicUpdate();
 
+            _player.AerialState.Jumping();
+            //_player.MoveVertically(_jumpInput ? _playerData.maxJumpVelocity : _playerData.minJumpVelocity);
+            _player.MoveVertically(_data.maxJumpVelocity);
             _player.InputHandler.TickJumpInput();
-            _player.AerialState.SetJumpingStatus();
-            _player.MoveVertically(_player.InputHandler.JumpInputTap ? _playerData.minJumpVelocity : _playerData.maxJumpVelocity);
-
             isActionDone = true;
         }
 
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
-        }
-
         public bool CanJump() => amountLeft > 0;
-        public void ResetAmount() => amountLeft = _playerData.amountOfJumps;
+        public void ResetAmount() => amountLeft = _data.amountOfJumps;
         public void DecreaseAmount() => amountLeft--;
     }
 }

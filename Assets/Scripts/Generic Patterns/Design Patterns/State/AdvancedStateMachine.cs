@@ -26,18 +26,6 @@ namespace DeaLoux.CoreSystems.Patterns
             currState?.LogicUpdate();
         }
 
-        public void PhysicsUpdate()
-        {
-            var transitions = GetTransitions();
-
-            if (transitions != null)
-            {
-                SetState(transitions.To);
-            }
-
-            currState?.PhysicsUpdate();
-        }
-
         public void SetState(IState state)
         {
             if (state == currState) return;

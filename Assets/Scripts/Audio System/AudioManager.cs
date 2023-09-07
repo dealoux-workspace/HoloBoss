@@ -7,7 +7,7 @@ using System;
 
 namespace DeaLoux.CoreSystems.Audio
 {
-	public class AudioManager : MonoBehaviour
+    public class AudioManager : MonoBehaviour
 	{
 		[Header("SoundEmitters pool")]
 		[SerializeField] private SoundEmitterFactorySO _factory = default;
@@ -59,6 +59,7 @@ namespace DeaLoux.CoreSystems.Audio
 			_SFXEventChannel.OnAudioCueFinishRequested -= FinishAudioCue;
 
 			_soundtracksEventChannel.OnAudioCuePlayRequested -= PlayMusicTrack;
+			_soundtracksEventChannel.OnAudioCueStopRequested -= StopMusic;
 		}
 
 		/// <summary>
@@ -109,7 +110,8 @@ namespace DeaLoux.CoreSystems.Audio
 			return (normalizedValue - 1f) * 80f;
 		}
 
-		private AudioCueKey PlayMusicTrack(AudioCueSO audioCue, AudioConfigurationSO audioConfiguration, Vector3 positionInSpace)
+        #region Soundtracks
+        private AudioCueKey PlayMusicTrack(AudioCueSO audioCue, AudioConfigurationSO audioConfiguration, int index = 0, bool fadeIn = false, Vector3 positionInSpace = default)
 		{
 			float fadeDuration = 2f;
 			float startTime = 0f;
@@ -121,11 +123,16 @@ namespace DeaLoux.CoreSystems.Audio
 					return AudioCueKey.Invalid;
 
 				//Music is already playing, need to fade it out
-				startTime = _soundtracksSoundEmitter.FadeMusicOut(fadeDuration);
+				startTime = _soundtracksSoundEmitter.FadeOut(fadeDuration);
 			}
 
 			_soundtracksSoundEmitter = _pool.Request();
-			_soundtracksSoundEmitter.FadeMusicIn(audioCue.GetClips()[0], audioConfiguration, 1f, startTime);
+
+            if (fadeIn)
+				_soundtracksSoundEmitter.FadeInPlay(audioCue.GetClip(index), audioConfiguration, 1f, startTime, index == 2);
+			else
+				_soundtracksSoundEmitter.PlayAudioClip(audioCue.GetClip(index), audioConfiguration, index == 2);
+			
 			_soundtracksSoundEmitter.OnSoundFinishedPlaying += StopMusicEmitter;
 
 			return AudioCueKey.Invalid; //No need to return a valid key for music
@@ -142,10 +149,19 @@ namespace DeaLoux.CoreSystems.Audio
 				return false;
 		}
 
-		/// <summary>
-		/// Plays an AudioCue by requesting the appropriate number of SoundEmitters from the pool.
-		/// </summary>
-		public AudioCueKey PlayAudioCue(AudioCueSO audioCue, AudioConfigurationSO settings, Vector3 position = default)
+		private void StopMusicEmitter(SoundEmitter soundEmitter)
+		{
+			soundEmitter.OnSoundFinishedPlaying -= StopMusicEmitter;
+			_pool.Return(soundEmitter);
+			_soundtracksEventChannel.RaiseFinishEvent(AudioCueKey.Invalid);
+		}
+        #endregion
+
+        #region SFXs
+        /// <summary>
+        /// Plays an AudioCue by requesting the appropriate number of SoundEmitters from the pool.
+        /// </summary>
+        public AudioCueKey PlayAudioCue(AudioCueSO audioCue, AudioConfigurationSO settings, int index = 0, bool fadeIn = false, Vector3 position = default)
 		{
 			AudioClip[] clipsToPlay = audioCue.GetClips();
 			SoundEmitter[] soundEmitterArray = new SoundEmitter[clipsToPlay.Length];
@@ -156,7 +172,10 @@ namespace DeaLoux.CoreSystems.Audio
 				soundEmitterArray[i] = _pool.Request();
 				if (soundEmitterArray[i] != null)
 				{
-					soundEmitterArray[i].PlayAudioClip(clipsToPlay[i], settings, audioCue.looping, position);
+					if(fadeIn)
+						soundEmitterArray[i].FadeInPlay(clipsToPlay[i], settings, 1f, default, audioCue.looping, position);
+					else
+						soundEmitterArray[i].PlayAudioClip(clipsToPlay[i], settings, audioCue.looping, position);
 					if (!audioCue.looping)
 						soundEmitterArray[i].OnSoundFinishedPlaying += OnSoundEmitterFinishedPlaying;
 				}
@@ -219,12 +238,7 @@ namespace DeaLoux.CoreSystems.Audio
 			//_soundEmitterVault.Remove(audioCueKey); is never called if StopAndClean is called after a Finish event
 			//How is the key removed from the vault?
 		}
-
-		private void StopMusicEmitter(SoundEmitter soundEmitter)
-		{
-			soundEmitter.OnSoundFinishedPlaying -= StopMusicEmitter;
-			_pool.Return(soundEmitter);
-		}
-	}
+        #endregion
+    }
 }
 

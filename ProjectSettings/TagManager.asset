@@ -14,18 +14,18 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
   - Background
   - Mainground
   - Foreground
-  - 
-  - 
-  - Push Box
   - Hit Box
-  - Hurt Box
+  - Player
+  - NPC
+  - Objects
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -47,6 +47,9 @@ TagManager:
   - name: Objects
     uniqueID: 436271429
     locked: 1
+  - name: Enemy
+    uniqueID: 1106108735
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 1

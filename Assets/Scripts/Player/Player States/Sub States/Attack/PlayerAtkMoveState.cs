@@ -1,11 +1,11 @@
-﻿using Data;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public class PlayerAtkMoveState : PlayerMoveState
     {
-        public PlayerAtkMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerAtkMoveState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName)
         {
         }
 
@@ -26,11 +26,6 @@ namespace DeaLoux.Player
             {
                 ChangeStateSH(_player.MoveState);
             }
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
         }
     }
 }

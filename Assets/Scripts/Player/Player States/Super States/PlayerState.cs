@@ -1,12 +1,13 @@
-﻿using Data;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public abstract class PlayerState : CoreSystems.Patterns.IState
     {
         protected Player _player;
         protected PlayerStateMachine _stateMachine;
+        protected EntityData _data;
         protected PlayerData _playerData;
 
         protected bool _animFinished;
@@ -25,10 +26,11 @@ namespace DeaLoux.Player
         protected bool _grounded;
         protected bool _wallTouched;
 
-        public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
+        public PlayerState(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName)
         {
             _player = player;
             _stateMachine = stateMachine;
+            _data = data;
             _playerData = playerData;
             _animBoolName = animBoolName;
             _animID = Animator.StringToHash(animBoolName);
@@ -52,10 +54,6 @@ namespace DeaLoux.Player
         public virtual void LogicUpdate()
         {
             Inputs();
-        }
-
-        public virtual void PhysicsUpdate()
-        {
         }
 
         protected void Inputs()

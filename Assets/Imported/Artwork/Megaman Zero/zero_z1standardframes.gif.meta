@@ -222,7 +222,7 @@ TextureImporter:
       213: -5871179505264802646
     second: zero_z1standardframes_119
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -239,9 +239,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -251,8 +254,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -273,10 +276,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -288,6 +296,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -300,6 +309,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -312,6 +322,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1860,9 +1884,82 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      zero_z1standardframes_0: -4679648189142073483
+      zero_z1standardframes_1: 3419877982177893945
+      zero_z1standardframes_10: 4410691022773004947
+      zero_z1standardframes_105: 7130938906783903211
+      zero_z1standardframes_106: 1536853970253800310
+      zero_z1standardframes_107: -9209034965985966862
+      zero_z1standardframes_108: 3807767563530143149
+      zero_z1standardframes_109: 356711311148411151
+      zero_z1standardframes_11: -7710168300187327292
+      zero_z1standardframes_110: -3224121348436289794
+      zero_z1standardframes_111: -2165686854251524779
+      zero_z1standardframes_112: -8509673085927902348
+      zero_z1standardframes_113: 5023308795625317735
+      zero_z1standardframes_114: -1384005609445755314
+      zero_z1standardframes_115: -21815559181925421
+      zero_z1standardframes_116: -4627933961207530722
+      zero_z1standardframes_117: 9098439492909182822
+      zero_z1standardframes_118: 7659319148720891908
+      zero_z1standardframes_119: -5871179505264802646
+      zero_z1standardframes_12: 4728733804895771077
+      zero_z1standardframes_13: -4470362439003780993
+      zero_z1standardframes_14: 5169510002432714547
+      zero_z1standardframes_15: 3009305241100239913
+      zero_z1standardframes_16: 7656420043881180509
+      zero_z1standardframes_17: 5398820975877575928
+      zero_z1standardframes_18: -4861980555886157159
+      zero_z1standardframes_19: 5841890378367542680
+      zero_z1standardframes_2: -4825600348151624933
+      zero_z1standardframes_20: -2158976513132681410
+      zero_z1standardframes_21: -7987640849438251954
+      zero_z1standardframes_22: 3844863748816507200
+      zero_z1standardframes_23: 3647230394528300973
+      zero_z1standardframes_24: -588433559874309749
+      zero_z1standardframes_25: -1926971725468815672
+      zero_z1standardframes_26: 6583173462739092138
+      zero_z1standardframes_27: -8060918187831545799
+      zero_z1standardframes_28: -5842265184688947559
+      zero_z1standardframes_3: -6056718319359760160
+      zero_z1standardframes_37: 5697818982711643365
+      zero_z1standardframes_38: 6134888045817701418
+      zero_z1standardframes_39: 3867092436926294337
+      zero_z1standardframes_4: 1940256107712330936
+      zero_z1standardframes_40: 3925764646631364214
+      zero_z1standardframes_41: 2847942276108971530
+      zero_z1standardframes_42: 4716168897620827055
+      zero_z1standardframes_43: -2216475335858822000
+      zero_z1standardframes_44: 2482106706063695658
+      zero_z1standardframes_45: -3124459023952925274
+      zero_z1standardframes_46: 6090844638995155492
+      zero_z1standardframes_47: -6468035988459278847
+      zero_z1standardframes_48: -2786478464764108457
+      zero_z1standardframes_49: -3950524482670178541
+      zero_z1standardframes_5: -8617317503455499894
+      zero_z1standardframes_50: -8467825584773041279
+      zero_z1standardframes_51: -5732577200801257757
+      zero_z1standardframes_52: -4710516955271925655
+      zero_z1standardframes_53: -1415756933971453962
+      zero_z1standardframes_54: 3337975155569970293
+      zero_z1standardframes_55: -1907645349667902129
+      zero_z1standardframes_56: -3027692521558348359
+      zero_z1standardframes_57: 3339718079680361151
+      zero_z1standardframes_6: -4428007951669218959
+      zero_z1standardframes_67: -5505066967426252861
+      zero_z1standardframes_68: -6968043921837315961
+      zero_z1standardframes_69: 7312131975538341771
+      zero_z1standardframes_7: 8069175913821921900
+      zero_z1standardframes_70: 379982470660157429
+      zero_z1standardframes_71: 4718903084136150615
+      zero_z1standardframes_72: -1557371913534782858
+      zero_z1standardframes_73: -1610315148852863640
+      zero_z1standardframes_74: -5418342189765961463
+      zero_z1standardframes_8: -1020291857338914725
+      zero_z1standardframes_9: -7642454311869367011
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

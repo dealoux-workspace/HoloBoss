@@ -1,22 +1,25 @@
 ﻿using UnityEngine;
-using System.Linq;
-using DeaLoux.CoreSystems.Patterns;
 
-[CreateAssetMenu(fileName = "NewSoundEmitterPool", menuName = "Pool/SoundEmitter Pool")]
-public class SoundEmitterPoolSO : ComponentPoolSO<SoundEmitter>
+namespace DeaLoux.CoreSystems.Audio
 {
-	[SerializeField]
-	private SoundEmitterFactorySO _factory;
+    using Patterns;
 
-	public override IFactory<SoundEmitter> Factory
-	{
-		get
-		{
-			return _factory;
-		}
-		set
-		{
-			_factory = value as SoundEmitterFactorySO;
-		}
-	}
+    [CreateAssetMenu(fileName = "NewSoundEmitterPool", menuName = "Pool/SoundEmitter Pool")]
+    public class SoundEmitterPoolSO : ComponentPoolSO<SoundEmitter>
+    {
+        [SerializeField]
+        private SoundEmitterFactorySO _factory;
+
+        public override IFactory<SoundEmitter> Factory
+        {
+            get
+            {
+                return _factory;
+            }
+            set
+            {
+                _factory = value as SoundEmitterFactorySO;
+            }
+        }
+    }
 }

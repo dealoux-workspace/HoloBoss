@@ -1,13 +1,15 @@
-﻿using DeaLoux.CoreSystems.Patterns;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewSoundEmitterFactory", menuName = "Factory/SoundEmitter Factory")]
-public class SoundEmitterFactorySO : FactorySO<SoundEmitter>
+namespace DeaLoux.CoreSystems.Audio
 {
-	public SoundEmitter prefab = default;
+    [CreateAssetMenu(fileName = "NewSoundEmitterFactory", menuName = "Factory/SoundEmitter Factory")]
+    public class SoundEmitterFactorySO : Patterns.FactorySO<SoundEmitter>
+    {
+        public SoundEmitter prefab = default;
 
-	public override SoundEmitter Create()
-	{
-		return Instantiate(prefab);
-	}
+        public override SoundEmitter Create()
+        {
+            return Instantiate(prefab);
+        }
+    }
 }

@@ -2,9 +2,8 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
-using Data;
 
-namespace DeaLoux.Player
+namespace DeaLoux.CoreSystems.Controller
 {
     [RequireComponent(typeof(BoxCollider2D), typeof(Rigidbody2D))]
     public class CharacterController2D : MonoBehaviour
@@ -65,7 +64,7 @@ namespace DeaLoux.Player
 
 
         [SerializeField]
-        PlayerData playerData;
+        Entity.EntityData data;
 
         [SerializeField]
         [Range(0.001f, 0.3f)]
@@ -140,19 +139,11 @@ namespace DeaLoux.Player
         /// </summary>
         float _slopeLimitTangent = Mathf.Tan(75f * Mathf.Deg2Rad);
 
-        [HideInInspector]
-        [NonSerialized]
-        public new Transform transform;
-        [HideInInspector]
-        [NonSerialized]
-        public BoxCollider2D boxCollider;
-        [HideInInspector]
-        [NonSerialized]
-        public Rigidbody2D rigidBody2D;
+        public new Transform transform { get; private set; }
+        public BoxCollider2D boxCollider { get; private set; }
+        public Rigidbody2D rigidBody2D { get; private set; }
 
-        [HideInInspector]
-        [NonSerialized]
-        public CharacterCollisionState2D collisionState = new CharacterCollisionState2D();
+        public CharacterCollisionState2D collisionState { get; private set; } = new CharacterCollisionState2D();
         [HideInInspector]
         [NonSerialized]
         public Vector3 velocity;
@@ -211,31 +202,19 @@ namespace DeaLoux.Player
         }
 
 
-        public void OnTriggerEnter2D(Collider2D col)
-        {
-            OnTriggerEnterEvent?.Invoke(col);
-        }
+        public void OnTriggerEnter2D(Collider2D col) => OnTriggerEnterEvent?.Invoke(col);
 
 
-        public void OnTriggerStay2D(Collider2D col)
-        {
-            OnTriggerStayEvent?.Invoke(col);
-        }
+        public void OnTriggerStay2D(Collider2D col) => OnTriggerStayEvent?.Invoke(col);
 
 
-        public void OnTriggerExit2D(Collider2D col)
-        {
-            OnTriggerExitEvent?.Invoke(col);
-        }
+        public void OnTriggerExit2D(Collider2D col) => OnTriggerExitEvent?.Invoke(col);
 
         #endregion
 
 
         [System.Diagnostics.Conditional("DEBUG_CC2D_RAYS")]
-        void DrawRay(Vector3 start, Vector3 dir, Color color)
-        {
-            Debug.DrawRay(start, dir, color);
-        }
+        void DrawRay(Vector3 start, Vector3 dir, Color color) => Debug.DrawRay(start, dir, color);
 
 
         #region Public
@@ -577,7 +556,7 @@ namespace DeaLoux.Player
 
         private void HandleSideCollision(float offsetX)
         {
-            bool FacingRight = playerData.FacingDir == 1;
+            bool FacingRight = data.facingDir == 1;
             float rayDistanceHorizontally = 0.1f + _skinWidth;
             Vector2 rayDir = FacingRight ? Vector2.right : -Vector2.right;
             Vector2 originTop = FacingRight ? _raycastOrigins.topRight : _raycastOrigins.topLeft;

@@ -1,12 +1,12 @@
-﻿using Data;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace DeaLoux.Player
+namespace DeaLoux.Entity
 {
     public class PlayerSecAtkIdle4State : PlayerState
     {
         private int index;
-        public PlayerSecAtkIdle4State(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerSecAtkIdle4State(Player player, PlayerStateMachine stateMachine, EntityData data, PlayerData playerData, string animBoolName) : base(player, stateMachine, data, playerData, animBoolName)
         {
         }
 
@@ -36,7 +36,7 @@ namespace DeaLoux.Player
             }
             else if (_primAtkInput)
             {
-                switch (_playerData.slot2.type)
+                switch (_data.slot2.type)
                 {
                     case EquipmentType.FOUR_WAY:
                         ChangeStateSH(_player.PrimAtkIdle4State);
@@ -56,11 +56,6 @@ namespace DeaLoux.Player
             {
                 _stateMachine.ChangeToPreviousState();
             }
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
         }
     }
 }

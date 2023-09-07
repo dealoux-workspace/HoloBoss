@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c402e47472722e6499f2129c925f0d41, type: 3}
+  m_Name: Animation Names
+  m_EditorClassIdentifier: 
+  list:
+  - 
+  - PrimAtk_4_Aerial
+  - PrimAtk_4_AerialCharged
+  - PrimAtk_4_AerialDown
+  - PrimAtk_4_AerialUp
+  - PrimAtk_4_Idle
+  - PrimAtk_4_Idle2
+  - PrimAtk_4_Idle3
+  - PrimAtk_4_IdleCharged
+  - PrimAtk_4_IdleUp
+  - PrimAtk_8_Aerial
+  - PrimAtk_8_AerialCharged
+  - PrimAtk_8_AerialChargedDown
+  - PrimAtk_8_AerialChargedDownDiag
+  - PrimAtk_8_AerialChargedUp
+  - PrimAtk_8_AerialChargedUpDiag
+  - PrimAtk_8_AerialDown
+  - PrimAtk_8_AerialDownDiag
+  - PrimAtk_8_AerialUp
+  - PrimAtk_8_AerialUpDiag
+  - PrimAtk_8_Idle
+  - PrimAtk_8_IdleCharged
+  - PrimAtk_8_IdleChargedDownDiag
+  - PrimAtk_8_IdleChargedUp
+  - PrimAtk_8_IdleChargedUpDiag
+  - PrimAtk_8_IdleDownDiag
+  - PrimAtk_8_IdleUp
+  - PrimAtk_8_IdleUpDiag
+  - PrimAtk_Dash
+  - PrimAtk_Move
+  - PrimAtk_Wall
+  - PrimAtk_WallCharged
+  - SecAtk_4_Aerial
+  - SecAtk_4_AerialCharged
+  - SecAtk_4_AerialDown
+  - SecAtk_4_AerialUp
+  - SecAtk_4_Idle
+  - SecAtk_4_Idle2
+  - SecAtk_4_Idle3
+  - SecAtk_4_IdleCharged
+  - SecAtk_4_IdleUp
+  - SecAtk_8_Aerial
+  - SecAtk_8_AerialCharged
+  - SecAtk_8_AerialChargedDown
+  - SecAtk_8_AerialChargedDownDiag
+  - SecAtk_8_AerialChargedUp
+  - SecAtk_8_AerialChargedUpDiag
+  - SecAtk_8_AerialDown
+  - SecAtk_8_AerialDownDiag
+  - SecAtk_8_AerialUp
+  - SecAtk_8_AerialUpDiag
+  - SecAtk_8_Idle
+  - SecAtk_8_IdleCharged
+  - SecAtk_8_IdleChargedDownDiag
+  - SecAtk_8_IdleChargedUp
+  - SecAtk_8_IdleChargedUpDiag
+  - SecAtk_8_IdleDownDiag
+  - SecAtk_8_IdleUp
+  - SecAtk_8_IdleUpDiag
+  - SecAtk_Dash
+  - SecAtk_Move
+  - SecAtk_Wall
+  - SecAtk_WallCharged

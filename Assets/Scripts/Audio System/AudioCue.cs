@@ -44,7 +44,7 @@ namespace DeaLoux.CoreSystems.Audio
 
         public void PlayAudioCue()
         {
-            controlKey = _audioCueEventChannel.RaisePlayEvent(_audioCue, _audioConfiguration, transform.position);
+            controlKey = _audioCueEventChannel.RaisePlayEvent(_audioCue, _audioConfiguration, default, default, transform.position);
         }
 
         public void StopAudioCue()

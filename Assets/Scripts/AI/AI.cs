@@ -1,129 +1,166 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
+using DeaLoux.CoreSystems.Collision;
+using DeaLoux.CoreSystems.Controller;
 
-namespace DeaLoux.AI
+namespace DeaLoux.Entity
 {
-    public class AI : MonoBehaviour
+    public class AI : Entity
     {
         #region State Variables
         public AI_StateMachine StateMachine { get; private set; }
+        public AI_IdleState IdleState { get; protected set; }
+        public AI_AerialState AerialState { get; protected set; }
+        public AI_MoveState MoveState { get; protected set; }
+        public AI_HurtState HurtState { get; protected set; }
 
+        protected Queue<AI_State> stateSequence;
         #endregion
 
         #region Components
-        public Rigidbody2D Rb { get; private set; }
-        public Animator Anim { get; private set; }
-        public GameObject AliveGO { get; private set; }
         public BoxCollider2D Coll { get; private set; }
+        public HurtBox HurtBox { get; private set; }
+
         #endregion
 
         #region Check Transforms
         [SerializeField]
-        private Transform groundCheck;
-        [SerializeField]
-        private Transform wallCheck;
-        [SerializeField]
-        private Transform ledgeCheck;
-        [SerializeField]
-        private Transform playerCheck;
+        protected Transform playerPos;
         #endregion
 
         #region Other Variables
         [SerializeField]
-        protected Data.AI_Data aIData;
-        public int FacingDir { get; private set; }
-        public Vector2 CurrVelocity { get; private set; }
-        protected bool _stunned;
-        protected bool _dead;
-        private float currHealth;
-        private float currStunResistance;
-        private float lastDamageTime;
-        private Vector2 workspace;
+        protected AI_Data baseData;
         #endregion
 
         #region Unity Callback Functions
-        public virtual void Awake()
+        protected override void Awake()
         {
-            StateMachine = gameObject.AddComponent<AI_StateMachine>();
-            FacingDir = 1;
-            currHealth = aIData.maxHealth;
-            currStunResistance = aIData.stunResistance;
+            base.Awake();
 
-            AliveGO = transform.Find("Alive").gameObject;
-            Rb = AliveGO.GetComponent<Rigidbody2D>();
-            Anim = AliveGO.GetComponent<Animator>();
-            //atsm = AliveGO.GetComponent<AnimationToStatemachine>();
+            StateMachine = gameObject.AddComponent<AI_StateMachine>();
+            stateSequence = new Queue<AI_State>();
+        }
+        protected override void Start()
+        {
+            base.Start();
         }
 
-        public virtual void Start() { }
-
-        public virtual void Update()
+        protected override void Update()
         {
             StateMachine.CurrState.LogicUpdate();
-        }
-
-        public virtual void FixedUpdate()
-        {
-            CurrVelocity = Rb.velocity;
-            StateMachine.CurrState.PhysicsUpdate();
+            base.Update();
         }
         #endregion
 
         #region Movement Functions
-        // horizontal velocity
-        public void SetVelocityX(float velocity)
+        public override void KnockBack(Vector2 target, float damage = 0)
         {
-            workspace.Set(velocity * FacingDir, CurrVelocity.y);
-            Rb.velocity = workspace;
-            CurrVelocity = workspace;
+            base.KnockBack(target, damage);
+
+            if (data.iframe <= 0)
+            {
+                TakeDamage(damage);
+                data.knockbackDir = target * data.knockbackDistance;
+                StateMachine.ChangeState(HurtState, true);
+            }
         }
 
-        // vertical velocity
-        public void SetVelocityY(float velocity)
+        protected override void GravityCheck()
         {
-            workspace.Set(CurrVelocity.x, velocity);
-            Rb.velocity = workspace;
-            CurrVelocity = workspace;
+            if (Grounded())
+            {
+                Controller.velocity.y = 0f;
+            }
         }
 
-        // angled velocity
-        public void SetVelocity(float velocity, Vector2 angle, int direction)
-        {
-            angle.Normalize();
-
-            workspace.Set(velocity * direction * angle.x, angle.y * velocity);
-            Rb.velocity = workspace;
-            CurrVelocity = workspace;
-        }
-
-        // dash velocity
-        public void SetVelocityD(float velocity, Vector2 direction)
-        {
-            workspace = velocity * direction;
-            Rb.velocity = workspace;
-            CurrVelocity = workspace;
-        }
         #endregion
 
         #region Check Functions
-        public bool Grounded() => Physics2D.OverlapCircle(groundCheck.position, aIData.groundCheckRadius, aIData.whatIsGround);
-        public bool LedgeReached() => Physics2D.Raycast(ledgeCheck.position, Vector2.down, aIData.ledgeCheckDistance, aIData.whatIsGround);
-        public bool WallReached() => Physics2D.Raycast(wallCheck.position, AliveGO.transform.right, aIData.wallCheckDistance, aIData.whatIsGround);
+        public bool LeftWallTouched() => Controller.collisionState.sideLeft;
+        public bool RightWallTouched() => Controller.collisionState.sideRight;
+        public override bool WallTouched() => RightWallTouched() || LeftWallTouched();
+        #endregion
+
+        #region Animation Event Functions
+        // Handing attack
+        public void PrimAttack() => data.slot1.DoAttack(hitPoint);
+        public void ChargedPrimAttack() => data.slot1.DoHeavyAttack(hitPoint);
+        public void SecAttack() => data.slot2.DoAttack(hitPoint);
+        public void ChargedSecAttack() => data.slot2.DoHeavyAttack(hitPoint);
+
+        // Handing hitpoint's position, rotation
+        protected void GetHitPoint(float angle, float offset)
+        {
+            hitPoint.gameObject.transform.position = hitPoint.pos[angle] * offset + transform.position;
+            hitPoint.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
+
         #endregion
 
         #region Other Functions
-        public void Flip()
+        protected RelativePos Decide()
         {
-            FacingDir *= -1;
-            AliveGO.transform.Rotate(0.0f, 180.0f, 0.0f);
+            Vector2 dis = playerPos.position - transform.position;
+
+            if (data.facingDir != (int)Mathf.Sign(dis.x))
+                Flip();
+
+            //Debug.Log(dis);
+
+            RelativePos result;
+
+            // The player is within melee range to the entity
+            if (Mathf.Abs(dis.x) < 4f)
+            {
+                if (dis.y > 1)
+                {
+                    result = RelativePos.close_above;
+                }
+                else if (dis.y < -1)
+                {
+                    result = RelativePos.close_below;
+                }
+                else
+                {
+                    result = RelativePos.close_onLevel;
+                }
+            }
+            // The player is far away from the entity
+            else
+            {
+                if (dis.y > 1)
+                {
+                    result = RelativePos.far_above;
+                }
+                else if (dis.y < -1)
+                {
+                    result = RelativePos.far_below;
+                }
+                else
+                {
+                    result = RelativePos.far_onLevel;
+                }
+            }
+
+            return result;
         }
 
-        public virtual void OnDrawGizmos()
-        {
-            Gizmos.DrawLine(wallCheck.position, wallCheck.position + (Vector3)(Vector2.right * FacingDir * aIData.wallCheckDistance));
-            Gizmos.DrawLine(ledgeCheck.position, ledgeCheck.position + (Vector3)(Vector2.down * aIData.ledgeCheckDistance));
-        }
+        public bool EmptySequence() => stateSequence.Count == 0;
+
+        public AI_State NextStateInSequence() => stateSequence.Dequeue();
         #endregion
+    }
+
+    public enum RelativePos
+    {
+        close_onLevel,
+        close_above,
+        close_below,
+        far_onLevel,
+        far_above,
+        far_below
     }
 }

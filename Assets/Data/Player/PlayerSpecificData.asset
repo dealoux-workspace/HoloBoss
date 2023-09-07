@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff759a205bb7294cb4802eeb2ee1f37, type: 3}
+  m_Name: PlayerSpecificData
+  m_EditorClassIdentifier: 
+  facingDir: -1
+  LookDir: {x: -1, y: 0, z: 0}
+  LookAngle: 180
+  slot1: {fileID: 11400000, guid: 8e7acc3d6511b7648b6e8cf8ff52dcf1, type: 2}
+  slot2: {fileID: 11400000, guid: 9f6fff170d190d348a82afa8ffc3cff7, type: 2}
+  inputHoldTime: 0.2
+  minChargeTime: 0.7
+  movementSpeed: 10
+  knockbackDistance: 1.5
+  dashJumpMultiplier: 1
+  maxJumpHeight: 4
+  minJumpHeight: 1
+  maxJumpVelocity: 19.999998
+  minJumpVelocity: 10
+  timeToJumpApex: 0.4
+  amountOfJumps: 1
+  coyoteTime: 0.08
+  dashTime: 0.3
+  dashVelocity: 20
+  afterImageDistance: 1.2
+  wallSlideVelocity: 4.2
+  wallJump: {x: 2.5, y: 10}
+  wallLeap: {x: 7, y: 10}
+  wallJumpCDTime: 0.5

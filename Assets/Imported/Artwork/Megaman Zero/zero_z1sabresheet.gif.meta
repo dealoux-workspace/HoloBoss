@@ -582,7 +582,7 @@ TextureImporter:
       213: -710446204411448721
     second: zero_z1sabresheet_193
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -599,9 +599,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -611,8 +614,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -633,10 +636,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -648,6 +656,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -660,6 +669,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -672,6 +682,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -3753,9 +3777,155 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      zero_z1sabresheet_0: 437712181963158012
+      zero_z1sabresheet_1: -7988931213790769966
+      zero_z1sabresheet_10: 1981976978768821527
+      zero_z1sabresheet_100: 458157170996631106
+      zero_z1sabresheet_101: -7194065100439519791
+      zero_z1sabresheet_102: 1778059069995333849
+      zero_z1sabresheet_103: -7270747718912010665
+      zero_z1sabresheet_11: -2972925292725850732
+      zero_z1sabresheet_111: 6655413427464723736
+      zero_z1sabresheet_113: -3287804105763443564
+      zero_z1sabresheet_115: -7690306813725549271
+      zero_z1sabresheet_117: 5244534183151294999
+      zero_z1sabresheet_118: 6072293022047559488
+      zero_z1sabresheet_119: -2193340715180666691
+      zero_z1sabresheet_12: 8929505899679583960
+      zero_z1sabresheet_121: 4058312549570868123
+      zero_z1sabresheet_122: -4207760098224074248
+      zero_z1sabresheet_13: 2307052329221246733
+      zero_z1sabresheet_135: 570220919898689909
+      zero_z1sabresheet_136: 875109357439674817
+      zero_z1sabresheet_138: 5845922752900496530
+      zero_z1sabresheet_14: -5102637271570300085
+      zero_z1sabresheet_140: -4013258429218127446
+      zero_z1sabresheet_142: -849987886457066342
+      zero_z1sabresheet_144: -2403040164203254313
+      zero_z1sabresheet_147: -3227552322770795224
+      zero_z1sabresheet_148: -6289232259474285264
+      zero_z1sabresheet_149: 4513259163599590517
+      zero_z1sabresheet_15: -7265559428212257764
+      zero_z1sabresheet_16: 6274435096292840082
+      zero_z1sabresheet_162: 2658796138733262192
+      zero_z1sabresheet_164: 6322059442161228100
+      zero_z1sabresheet_166: 1234450394861019962
+      zero_z1sabresheet_17: -2062226443085862379
+      zero_z1sabresheet_171: -908543315462115447
+      zero_z1sabresheet_172: -8194883936295506887
+      zero_z1sabresheet_173: -2938164050000857133
+      zero_z1sabresheet_174: -1392028889995461063
+      zero_z1sabresheet_175: -8832173566998784837
+      zero_z1sabresheet_176: 5790115878846908373
+      zero_z1sabresheet_177: 4349961468040599138
+      zero_z1sabresheet_178: -3059295866908749980
+      zero_z1sabresheet_179: -6518486161321808184
+      zero_z1sabresheet_18: 562321643120171326
+      zero_z1sabresheet_180: -3523336742525553481
+      zero_z1sabresheet_181: -7880762544727505920
+      zero_z1sabresheet_182: 2869714829590196426
+      zero_z1sabresheet_183: -3591365129872409815
+      zero_z1sabresheet_184: 2279315875120042969
+      zero_z1sabresheet_185: -1178430267902020700
+      zero_z1sabresheet_186: 3578077778232076954
+      zero_z1sabresheet_187: -3050778922614758283
+      zero_z1sabresheet_188: 8031299302295170042
+      zero_z1sabresheet_189: 8369285540757504316
+      zero_z1sabresheet_19: 3328282686473303096
+      zero_z1sabresheet_190: 7409355835270287237
+      zero_z1sabresheet_191: -31609446123658086
+      zero_z1sabresheet_192: 2676763390730977003
+      zero_z1sabresheet_193: -710446204411448721
+      zero_z1sabresheet_2: 6851792637970040151
+      zero_z1sabresheet_20: 2826149238975014154
+      zero_z1sabresheet_21: 3729735370358505848
+      zero_z1sabresheet_22: -1550186677616324818
+      zero_z1sabresheet_23: -8347691249532273517
+      zero_z1sabresheet_24: -9139729159671634815
+      zero_z1sabresheet_25: 2299404193291643019
+      zero_z1sabresheet_26: -1912677637545260426
+      zero_z1sabresheet_27: 101329679450626356
+      zero_z1sabresheet_28: -6779034049435594771
+      zero_z1sabresheet_29: -5021536039371337218
+      zero_z1sabresheet_3: -6091200716010711635
+      zero_z1sabresheet_30: -1007908907617196992
+      zero_z1sabresheet_31: -8986104403710767490
+      zero_z1sabresheet_32: -1682116184543405316
+      zero_z1sabresheet_33: 622536141635638069
+      zero_z1sabresheet_34: 2840031288076205185
+      zero_z1sabresheet_35: -8995345019020488456
+      zero_z1sabresheet_36: -3649590368827500359
+      zero_z1sabresheet_37: 7886612666128567144
+      zero_z1sabresheet_38: -8524095782356273472
+      zero_z1sabresheet_39: -3864956477813504492
+      zero_z1sabresheet_4: -6766825907383398308
+      zero_z1sabresheet_40: -3555961776674290258
+      zero_z1sabresheet_41: 8178061314572339421
+      zero_z1sabresheet_42: 7627050173077570922
+      zero_z1sabresheet_43: -8564410414941736141
+      zero_z1sabresheet_44: 6038442186620593323
+      zero_z1sabresheet_45: 8001046682316260625
+      zero_z1sabresheet_46: 4937919302818878573
+      zero_z1sabresheet_47: 4829254348698626791
+      zero_z1sabresheet_48: -7589216077495511311
+      zero_z1sabresheet_49: 3395170434128218489
+      zero_z1sabresheet_50: -3048531477089117062
+      zero_z1sabresheet_51: -110146075934949757
+      zero_z1sabresheet_52: 4799902463092831475
+      zero_z1sabresheet_53: 8564157457405109307
+      zero_z1sabresheet_54: -6183511228764999605
+      zero_z1sabresheet_55: -3813248259729212358
+      zero_z1sabresheet_56: -7545380672951244890
+      zero_z1sabresheet_57: -4369066089547627511
+      zero_z1sabresheet_58: -2483323406368268626
+      zero_z1sabresheet_59: -4006541104953702802
+      zero_z1sabresheet_6: 8774699728438677817
+      zero_z1sabresheet_60: 8872636246541456768
+      zero_z1sabresheet_61: -3036587148505618036
+      zero_z1sabresheet_62: -2318209987344636086
+      zero_z1sabresheet_63: 3929045616279074063
+      zero_z1sabresheet_64: -804626419471360706
+      zero_z1sabresheet_65: 797049918116281014
+      zero_z1sabresheet_66: -8151514997543017565
+      zero_z1sabresheet_67: -7561216001986769279
+      zero_z1sabresheet_68: 7357512565181788360
+      zero_z1sabresheet_69: -6491996960729497285
+      zero_z1sabresheet_7: 4231729844779253540
+      zero_z1sabresheet_70: 5444754171443720908
+      zero_z1sabresheet_71: -8778214215496543387
+      zero_z1sabresheet_72: -2727205081530610539
+      zero_z1sabresheet_73: 8172683284743617232
+      zero_z1sabresheet_74: 114826250485946276
+      zero_z1sabresheet_75: 8333467405427570759
+      zero_z1sabresheet_76: 6233701429628374274
+      zero_z1sabresheet_77: 4741531620416559587
+      zero_z1sabresheet_78: 3457483682982274507
+      zero_z1sabresheet_79: 2169248936719381891
+      zero_z1sabresheet_8: -3345681772023058785
+      zero_z1sabresheet_80: 5674490037708800306
+      zero_z1sabresheet_81: -7535481416806158376
+      zero_z1sabresheet_82: -4757374660136948155
+      zero_z1sabresheet_83: -1406132774934481165
+      zero_z1sabresheet_84: -3326105679229766042
+      zero_z1sabresheet_85: 1783020116123337355
+      zero_z1sabresheet_86: -2741098285842086425
+      zero_z1sabresheet_87: -2732342943953396577
+      zero_z1sabresheet_88: 6887301302595707427
+      zero_z1sabresheet_89: -2954619837984836255
+      zero_z1sabresheet_9: -4378511192734518960
+      zero_z1sabresheet_90: 2044278924263901172
+      zero_z1sabresheet_91: 5956834445642286748
+      zero_z1sabresheet_92: -3367034728878142869
+      zero_z1sabresheet_93: -1360205778706117777
+      zero_z1sabresheet_94: 8647915909221063143
+      zero_z1sabresheet_95: 6855385768043841084
+      zero_z1sabresheet_96: 4727080429205673108
+      zero_z1sabresheet_97: 6747508135953929166
+      zero_z1sabresheet_98: -6808312538959798582
+      zero_z1sabresheet_99: -2872255216919711311
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

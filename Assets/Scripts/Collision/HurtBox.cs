@@ -31,9 +31,42 @@ namespace DeaLoux.CoreSystems.Collision
             {
                 Left = true;
             }
+            Debug.Log("Something hit me 1!");
         }
 
         void OnCollisionExit2D(Collision2D collision)
+        {
+            Left = Right = Top = Bottom = false;
+        }
+
+        void OnTriggerEnter2D(Collider2D collider)
+        {
+            ContactPoint2D[] contactPoints = new ContactPoint2D[2];
+            collider.GetContacts(contactPoints);
+            Vector2 contactPoint = contactPoints[0].point;
+
+
+            if (contactPoint.y < 0)
+            {
+                Top = true;
+            }
+            else
+            {
+                Bottom = true;
+            }
+
+            if (contactPoint.x < 0)
+            {
+                Right = true;
+            }
+            else
+            {
+                Left = true;
+            }
+            Debug.Log("Something hit me 2!");
+        }
+
+        void OnTriggerExit2D(Collider2D collider)
         {
             Left = Right = Top = Bottom = false;
         }
