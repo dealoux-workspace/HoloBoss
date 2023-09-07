@@ -1,5 +1,5 @@
 # [HoloBoss](https://dealoux.itch.io/holoboss)
-A 2D action Metroidvania game prototype
+A 2D action Metroidvania MegaMan like game prototype
 - Language: [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
 - Engine: [Unity](https://unity.com/)
 
