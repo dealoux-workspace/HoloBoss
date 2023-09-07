@@ -24,3 +24,4 @@ A 2D action Metroidvania game prototype
 - Charged attacks
 - Multiple weapons
 - Simple AI
+- Try the build on [itch.io](https://dealoux.itch.io/holoboss)
